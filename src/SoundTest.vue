@@ -295,8 +295,8 @@ let source = createSource();
 let audioBuffer: AudioBuffer;
 let wwtRate = 1;
 
-const minWwtTime = new Date(2024, 2, 1).getTime();
-const maxWwtTime = new Date(2024, 10, 1).getTime();
+const minWwtTime = new Date(1992, 1, 1).getTime();
+const maxWwtTime = new Date(2025, 2, 1).getTime();
 
 // Took a lot of inspiration from https://stackoverflow.com/a/60106850
 function setupSlider() {
@@ -324,10 +324,9 @@ function setupSlider() {
 onMounted(() => {
   store.waitForReady().then(async () => {
     // Fetch the audio data
-  
     store.setClockRate(0);
     store.setTime(new Date(minWwtTime));
-    fetch("Star_Wars_Theme_Song_By_John_Williams.mp3")
+    fetch("exoplanetSonification.wav")
       .then(res => res.arrayBuffer())
       .then(async (buf) => {
         audioBuffer = await context.decodeAudioData(buf);

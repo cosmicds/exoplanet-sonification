@@ -1,0 +1,5849 @@
+1992-01,Pulsar Timing
+1992-01,Pulsar Timing
+1994-04,Pulsar Timing
+1995-11,Radial Velocity
+1996-06,Radial Velocity
+1996-06,Radial Velocity
+1997-01,Radial Velocity
+1997-01,Radial Velocity
+1997-01,Radial Velocity
+1997-07,Radial Velocity
+1997-07,Radial Velocity
+1998-10,Radial Velocity
+1998-12,Radial Velocity
+1999-01,Radial Velocity
+1999-01,Radial Velocity
+1999-07,Radial Velocity
+1999-07,Radial Velocity
+1999-12,Radial Velocity
+1999-12,Radial Velocity
+2000-01,Radial Velocity
+2000-01,Radial Velocity
+2000-02,Radial Velocity
+2000-04,Radial Velocity
+2000-04,Radial Velocity
+2000-04,Radial Velocity
+2000-04,Radial Velocity
+2000-06,Radial Velocity
+2000-06,Radial Velocity
+2000-06,Radial Velocity
+2000-06,Radial Velocity
+2000-06,Radial Velocity
+2000-06,Radial Velocity
+2000-12,Radial Velocity
+2000-12,Radial Velocity
+2000-12,Radial Velocity
+2001-04,Radial Velocity
+2001-04,Radial Velocity
+2001-04,Radial Velocity
+2001-04,Radial Velocity
+2001-04,Radial Velocity
+2001-07,Radial Velocity
+2001-07,Radial Velocity
+2001-07,Radial Velocity
+2001-07,Radial Velocity
+2001-08,Radial Velocity
+2001-08,Radial Velocity
+2001-08,Radial Velocity
+2001-12,Radial Velocity
+2001-12,Radial Velocity
+2002-01,Radial Velocity
+2002-03,Radial Velocity
+2002-03,Radial Velocity
+2002-03,Radial Velocity
+2002-03,Radial Velocity
+2002-03,Radial Velocity
+2002-05,Radial Velocity
+2002-05,Radial Velocity
+2002-05,Radial Velocity
+2002-05,Radial Velocity
+2002-06,Radial Velocity
+2002-06,Radial Velocity
+2002-07,Radial Velocity
+2002-07,Radial Velocity
+2002-07,Radial Velocity
+2002-09,Radial Velocity
+2002-10,Radial Velocity
+2002-12,Radial Velocity
+2002-12,Radial Velocity
+2002-12,Radial Velocity
+2003-01,Radial Velocity
+2003-01,Radial Velocity
+2003-01,Radial Velocity
+2003-01,Radial Velocity
+2003-01,Radial Velocity
+2003-01,Radial Velocity
+2003-01,Radial Velocity
+2003-01,Radial Velocity
+2003-01,Transit
+2003-02,Radial Velocity
+2003-04,Radial Velocity
+2003-04,Radial Velocity
+2003-04,Radial Velocity
+2003-04,Radial Velocity
+2003-04,Radial Velocity
+2003-04,Radial Velocity
+2003-05,Radial Velocity
+2003-06,Radial Velocity
+2003-06,Radial Velocity
+2003-07,Pulsar Timing
+2003-08,Radial Velocity
+2003-11,Radial Velocity
+2003-11,Radial Velocity
+2003-11,Radial Velocity
+2003-11,Radial Velocity
+2003-12,Radial Velocity
+2004-01,Radial Velocity
+2004-01,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-02,Radial Velocity
+2004-05,Microlensing
+2004-07,Transit
+2004-07,Transit
+2004-08,Radial Velocity
+2004-08,Radial Velocity
+2004-10,Imaging
+2004-10,Radial Velocity
+2004-10,Radial Velocity
+2004-10,Radial Velocity
+2004-10,Transit
+2004-10,Transit
+2004-11,Radial Velocity
+2004-12,Radial Velocity
+2004-12,Radial Velocity
+2004-12,Radial Velocity
+2005-01,Radial Velocity
+2005-01,Radial Velocity
+2005-01,Radial Velocity
+2005-01,Radial Velocity
+2005-01,Radial Velocity
+2005-02,Imaging
+2005-02,Radial Velocity
+2005-04,Radial Velocity
+2005-04,Radial Velocity
+2005-05,Imaging
+2005-05,Transit
+2005-07,Radial Velocity
+2005-07,Radial Velocity
+2005-07,Radial Velocity
+2005-07,Radial Velocity
+2005-07,Radial Velocity
+2005-08,Imaging
+2005-08,Radial Velocity
+2005-08,Radial Velocity
+2005-08,Radial Velocity
+2005-08,Microlensing
+2005-09,Radial Velocity
+2005-10,Radial Velocity
+2005-10,Radial Velocity
+2005-10,Radial Velocity
+2005-10,Radial Velocity
+2005-10,Radial Velocity
+2005-10,Radial Velocity
+2005-11,Radial Velocity
+2005-11,Radial Velocity
+2005-12,Radial Velocity
+2005-12,Radial Velocity
+2005-12,Radial Velocity
+2006-01,Microlensing
+2006-02,Radial Velocity
+2006-02,Radial Velocity
+2006-02,Radial Velocity
+2006-02,Radial Velocity
+2006-03,Radial Velocity
+2006-04,Radial Velocity
+2006-05,Radial Velocity
+2006-05,Radial Velocity
+2006-05,Radial Velocity
+2006-05,Radial Velocity
+2006-06,Radial Velocity
+2006-06,Radial Velocity
+2006-06,Microlensing
+2006-07,Radial Velocity
+2006-07,Radial Velocity
+2006-07,Radial Velocity
+2006-07,Radial Velocity
+2006-07,Radial Velocity
+2006-07,Radial Velocity
+2006-07,Radial Velocity
+2006-08,Radial Velocity
+2006-08,Radial Velocity
+2006-08,Radial Velocity
+2006-08,Radial Velocity
+2006-09,Radial Velocity
+2006-09,Transit
+2006-10,Imaging
+2006-10,Radial Velocity
+2006-10,Transit
+2006-10,Transit
+2006-11,Imaging
+2006-11,Transit
+2006-12,Radial Velocity
+2006-12,Radial Velocity
+2007-01,Imaging
+2007-02,Transit
+2007-02,Radial Velocity
+2007-03,Radial Velocity
+2007-03,Radial Velocity
+2007-03,Radial Velocity
+2007-03,Transit
+2007-03,Transit
+2007-05,Radial Velocity
+2007-05,Radial Velocity
+2007-05,Radial Velocity
+2007-05,Radial Velocity
+2007-05,Imaging
+2007-05,Radial Velocity
+2007-07,Radial Velocity
+2007-07,Transit
+2007-08,Radial Velocity
+2007-08,Radial Velocity
+2007-08,Radial Velocity
+2007-08,Radial Velocity
+2007-08,Radial Velocity
+2007-08,Radial Velocity
+2007-08,Radial Velocity
+2007-08,Radial Velocity
+2007-09,Radial Velocity
+2007-09,Radial Velocity
+2007-09,Transit
+2007-09,Pulsation Timing Variations
+2007-10,Radial Velocity
+2007-10,Radial Velocity
+2007-10,Radial Velocity
+2007-10,Transit
+2007-11,Radial Velocity
+2007-11,Transit
+2007-11,Transit
+2007-11,Radial Velocity
+2007-11,Radial Velocity
+2007-11,Radial Velocity
+2007-11,Radial Velocity
+2007-11,Radial Velocity
+2007-11,Radial Velocity
+2007-11,Radial Velocity
+2007-12,Transit
+2007-12,Radial Velocity
+2007-12,Radial Velocity
+2007-12,Transit
+2007-12,Microlensing
+2007-12,Microlensing
+2008-01,Radial Velocity
+2008-01,Transit
+2008-02,Radial Velocity
+2008-02,Imaging
+2008-03,Radial Velocity
+2008-03,Radial Velocity
+2008-03,Radial Velocity
+2008-03,Radial Velocity
+2008-03,Transit
+2008-03,Transit
+2008-03,Radial Velocity
+2008-04,Transit
+2008-04,Transit
+2008-04,Transit
+2008-05,Transit
+2008-05,Transit
+2008-06,Radial Velocity
+2008-06,Transit
+2008-06,Radial Velocity
+2008-06,Transit
+2008-06,Radial Velocity
+2008-08,Radial Velocity
+2008-08,Transit
+2008-09,Transit
+2008-09,Microlensing
+2008-10,Transit
+2008-11,Imaging
+2008-11,Radial Velocity
+2008-11,Radial Velocity
+2008-11,Imaging
+2008-11,Imaging
+2008-11,Imaging
+2008-12,Radial Velocity
+2008-12,Imaging
+2008-12,Radial Velocity
+2008-12,Radial Velocity
+2008-12,Transit
+2008-12,Radial Velocity
+2008-12,Radial Velocity
+2009-01,Radial Velocity
+2009-01,Transit
+2009-01,Radial Velocity
+2009-01,Radial Velocity
+2009-01,Radial Velocity
+2009-01,Radial Velocity
+2009-01,Radial Velocity
+2009-01,Transit
+2009-01,Imaging
+2009-02,Imaging
+2009-02,Transit
+2009-02,Transit
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Radial Velocity
+2009-03,Transit
+2009-04,Transit
+2009-05,Radial Velocity
+2009-06,Radial Velocity
+2009-06,Radial Velocity
+2009-06,Radial Velocity
+2009-06,Radial Velocity
+2009-06,Radial Velocity
+2009-06,Microlensing
+2009-06,Transit
+2009-07,Radial Velocity
+2009-07,Transit
+2009-07,Transit
+2009-08,Transit
+2009-09,Radial Velocity
+2009-09,Radial Velocity
+2009-09,Radial Velocity
+2009-09,Transit
+2009-10,Radial Velocity
+2009-10,Transit
+2009-10,Transit
+2009-10,Radial Velocity
+2009-10,Transit
+2009-10,Radial Velocity
+2009-10,Radial Velocity
+2009-10,Radial Velocity
+2009-10,Radial Velocity
+2009-10,Radial Velocity
+2009-10,Radial Velocity
+2009-11,Radial Velocity
+2009-11,Transit
+2009-12,Radial Velocity
+2009-12,Radial Velocity
+2009-12,Radial Velocity
+2009-12,Radial Velocity
+2009-12,Transit
+2009-12,Transit
+2009-12,Radial Velocity
+2009-12,Radial Velocity
+2010-01,Radial Velocity
+2010-01,Radial Velocity
+2010-01,Radial Velocity
+2010-01,Eclipse Timing Variations
+2010-01,Radial Velocity
+2010-01,Transit
+2010-01,Transit
+2010-01,Radial Velocity
+2010-02,Radial Velocity
+2010-02,Transit
+2010-02,Radial Velocity
+2010-02,Radial Velocity
+2010-02,Radial Velocity
+2010-02,Radial Velocity
+2010-02,Radial Velocity
+2010-02,Microlensing
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Transit
+2010-03,Transit
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Radial Velocity
+2010-03,Microlensing
+2010-04,Radial Velocity
+2010-04,Radial Velocity
+2010-04,Radial Velocity
+2010-04,Radial Velocity
+2010-04,Transit
+2010-04,Transit
+2010-04,Transit
+2010-04,Transit
+2010-05,Imaging
+2010-05,Radial Velocity
+2010-05,Transit
+2010-05,Radial Velocity
+2010-05,Radial Velocity
+2010-05,Radial Velocity
+2010-05,Radial Velocity
+2010-05,Radial Velocity
+2010-05,Radial Velocity
+2010-05,Radial Velocity
+2010-05,Radial Velocity
+2010-07,Radial Velocity
+2010-07,Transit
+2010-08,Radial Velocity
+2010-08,Radial Velocity
+2010-08,Radial Velocity
+2010-09,Transit
+2010-09,Transit
+2010-09,Transit
+2010-09,Transit
+2010-09,Transit
+2010-09,Transit
+2010-09,Transit
+2010-09,Transit
+2010-10,Radial Velocity
+2010-10,Radial Velocity
+2010-10,Radial Velocity
+2010-10,Radial Velocity
+2010-10,Radial Velocity
+2010-10,Transit
+2010-10,Transit
+2010-10,Eclipse Timing Variations
+2010-10,Eclipse Timing Variations
+2010-11,Transit
+2010-11,Radial Velocity
+2010-11,Radial Velocity
+2010-11,Radial Velocity
+2010-11,Radial Velocity
+2010-11,Radial Velocity
+2010-11,Radial Velocity
+2010-11,Radial Velocity
+2010-11,Radial Velocity
+2010-11,Radial Velocity
+2010-11,Transit
+2010-11,Transit
+2010-12,Transit
+2010-12,Transit
+2010-12,Transit
+2010-12,Imaging
+2010-12,Transit
+2010-12,Transit
+2010-12,Imaging
+2010-12,Transit
+2010-12,Transit
+2011-01,Radial Velocity
+2011-01,Radial Velocity
+2011-01,Imaging
+2011-01,Transit
+2011-01,Transit
+2011-01,Radial Velocity
+2011-01,Radial Velocity
+2011-01,Radial Velocity
+2011-01,Transit
+2011-01,Transit
+2011-01,Transit
+2011-01,Transit
+2011-02,Radial Velocity
+2011-02,Transit
+2011-02,Radial Velocity
+2011-02,Radial Velocity
+2011-02,Radial Velocity
+2011-02,Radial Velocity
+2011-02,Radial Velocity
+2011-02,Radial Velocity
+2011-02,Radial Velocity
+2011-02,Radial Velocity
+2011-02,Transit
+2011-02,Transit
+2011-02,Transit
+2011-02,Transit
+2011-02,Transit
+2011-02,Transit
+2011-02,Microlensing
+2011-02,Transit
+2011-03,Radial Velocity
+2011-03,Radial Velocity
+2011-03,Radial Velocity
+2011-03,Radial Velocity
+2011-03,Radial Velocity
+2011-03,Radial Velocity
+2011-03,Imaging
+2011-03,Transit
+2011-03,Imaging
+2011-04,Transit
+2011-04,Radial Velocity
+2011-04,Radial Velocity
+2011-04,Radial Velocity
+2011-04,Radial Velocity
+2011-04,Radial Velocity
+2011-04,Radial Velocity
+2011-04,Radial Velocity
+2011-04,Transit
+2011-04,Imaging
+2011-05,Radial Velocity
+2011-05,Microlensing
+2011-05,Transit
+2011-05,Radial Velocity
+2011-06,Transit
+2011-06,Transit
+2011-06,Transit
+2011-06,Eclipse Timing Variations
+2011-06,Eclipse Timing Variations
+2011-07,Transit
+2011-07,Transit
+2011-07,Transit
+2011-07,Transit
+2011-07,Transit
+2011-07,Transit
+2011-09,Transit
+2011-09,Transit
+2011-09,Radial Velocity
+2011-09,Radial Velocity
+2011-09,Transit
+2011-09,Transit
+2011-09,Pulsar Timing
+2011-09,Eclipse Timing Variations
+2011-09,Eclipse Timing Variations
+2011-09,Transit
+2011-09,Transit
+2011-09,Transit
+2011-10,Imaging
+2011-10,Radial Velocity
+2011-10,Radial Velocity
+2011-10,Radial Velocity
+2011-10,Radial Velocity
+2011-10,Transit
+2011-11,Transit
+2011-11,Transit
+2011-11,Radial Velocity
+2011-11,Radial Velocity
+2011-11,Radial Velocity
+2011-11,Radial Velocity
+2011-11,Radial Velocity
+2011-11,Radial Velocity
+2011-11,Radial Velocity
+2011-11,Radial Velocity
+2011-11,Transit
+2011-11,Transit
+2011-11,Transit
+2011-11,Transit
+2011-11,Transit
+2011-11,Transit
+2011-11,Transit
+2011-11,Transit
+2011-11,Microlensing
+2011-11,Transit
+2011-11,Transit
+2011-12,Radial Velocity
+2011-12,Transit
+2011-12,Transit
+2011-12,Transit
+2011-12,Transit
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Radial Velocity
+2011-12,Orbital Brightness Modulation
+2011-12,Orbital Brightness Modulation
+2011-12,Transit
+2011-12,Transit Timing Variations
+2011-12,Transit
+2012-01,Radial Velocity
+2012-01,Transit
+2012-01,Transit
+2012-01,Transit
+2012-01,Radial Velocity
+2012-01,Radial Velocity
+2012-01,Radial Velocity
+2012-01,Radial Velocity
+2012-01,Radial Velocity
+2012-01,Radial Velocity
+2012-01,Radial Velocity
+2012-01,Radial Velocity
+2012-01,Transit
+2012-01,Transit
+2012-02,Transit
+2012-02,Radial Velocity
+2012-02,Radial Velocity
+2012-02,Transit
+2012-02,Transit
+2012-02,Transit
+2012-02,Transit
+2012-02,Transit
+2012-02,Transit
+2012-02,Eclipse Timing Variations
+2012-03,Transit
+2012-03,Transit
+2012-03,Transit
+2012-04,Transit
+2012-04,Radial Velocity
+2012-04,Radial Velocity
+2012-04,Radial Velocity
+2012-04,Radial Velocity
+2012-04,Radial Velocity
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-04,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-05,Eclipse Timing Variations
+2012-05,Transit
+2012-05,Transit
+2012-05,Transit
+2012-06,Transit
+2012-06,Transit Timing Variations
+2012-07,Transit
+2012-07,Transit
+2012-07,Transit
+2012-07,Transit
+2012-07,Radial Velocity
+2012-07,Radial Velocity
+2012-07,Transit
+2012-07,Transit
+2012-07,Transit
+2012-07,Microlensing
+2012-08,Transit
+2012-08,Transit
+2012-08,Microlensing
+2012-08,Transit
+2012-08,Transit
+2012-09,Radial Velocity
+2012-09,Transit
+2012-09,Radial Velocity
+2012-09,Radial Velocity
+2012-09,Radial Velocity
+2012-09,Radial Velocity
+2012-09,Radial Velocity
+2012-09,Transit
+2012-09,Transit
+2012-09,Transit
+2012-09,Radial Velocity
+2012-09,Radial Velocity
+2012-10,Radial Velocity
+2012-10,Transit
+2012-10,Transit
+2012-10,Microlensing
+2012-10,Transit
+2012-10,Transit
+2012-10,Transit
+2012-10,Transit
+2012-10,Transit
+2012-10,Transit
+2012-10,Transit
+2012-10,Imaging
+2012-10,Radial Velocity
+2012-11,Transit
+2012-11,Transit
+2012-11,Transit
+2012-11,Transit
+2012-11,Transit
+2012-12,Radial Velocity
+2012-12,Radial Velocity
+2012-12,Radial Velocity
+2012-12,Radial Velocity
+2012-12,Radial Velocity
+2012-12,Radial Velocity
+2012-12,Transit
+2012-12,Transit
+2012-12,Radial Velocity
+2012-12,Radial Velocity
+2012-12,Radial Velocity
+2012-12,Radial Velocity
+2013-01,Radial Velocity
+2013-01,Radial Velocity
+2013-01,Transit
+2013-01,Radial Velocity
+2013-01,Radial Velocity
+2013-01,Radial Velocity
+2013-01,Radial Velocity
+2013-01,Radial Velocity
+2013-01,Radial Velocity
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Microlensing
+2013-01,Microlensing
+2013-01,Microlensing
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-01,Transit
+2013-02,Transit
+2013-02,Transit
+2013-02,Transit
+2013-02,Transit
+2013-02,Transit
+2013-02,Transit
+2013-02,Imaging
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Radial Velocity
+2013-03,Transit
+2013-03,Transit
+2013-03,Radial Velocity
+2013-03,Transit
+2013-03,Transit
+2013-03,Transit
+2013-03,Transit
+2013-04,Radial Velocity
+2013-04,Transit
+2013-04,Transit
+2013-04,Transit
+2013-04,Microlensing
+2013-04,Transit
+2013-04,Transit
+2013-04,Transit
+2013-05,Imaging
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-05,Transit
+2013-06,Radial Velocity
+2013-06,Radial Velocity
+2013-06,Transit
+2013-06,Transit
+2013-07,Radial Velocity
+2013-07,Transit
+2013-07,Transit
+2013-07,Transit
+2013-07,Transit
+2013-07,Orbital Brightness Modulation
+2013-07,Radial Velocity
+2013-08,Astrometry
+2013-08,Radial Velocity
+2013-08,Radial Velocity
+2013-08,Radial Velocity
+2013-08,Radial Velocity
+2013-08,Radial Velocity
+2013-08,Radial Velocity
+2013-08,Radial Velocity
+2013-08,Radial Velocity
+2013-08,Radial Velocity
+2013-08,Imaging
+2013-08,Radial Velocity
+2013-08,Transit
+2013-08,Transit
+2013-08,Radial Velocity
+2013-09,Imaging
+2013-09,Radial Velocity
+2013-09,Imaging
+2013-09,Radial Velocity
+2013-09,Transit
+2013-09,Transit
+2013-09,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-10,Transit
+2013-11,Transit
+2013-11,Transit
+2013-11,Transit Timing Variations
+2013-11,Microlensing
+2013-11,Transit
+2013-11,Transit
+2013-11,Transit
+2013-12,Microlensing
+2014-01,Radial Velocity
+2014-01,Imaging
+2014-01,Radial Velocity
+2014-01,Transit
+2014-01,Transit
+2014-01,Transit
+2014-01,Transit
+2014-01,Transit
+2014-01,Transit
+2014-01,Transit
+2014-01,Transit
+2014-01,Transit
+2014-01,Microlensing
+2014-01,Radial Velocity
+2014-01,Radial Velocity
+2014-01,Radial Velocity
+2014-01,Imaging
+2014-01,Imaging
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Radial Velocity
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Radial Velocity
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Radial Velocity
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Radial Velocity
+2014-02,Transit
+2014-02,Radial Velocity
+2014-02,Transit
+2014-02,Transit
+2014-02,Transit
+2014-02,Radial Velocity
+2014-02,Transit
+2014-02,Transit
+2014-02,Microlensing
+2014-02,Transit
+2014-03,Radial Velocity
+2014-03,Radial Velocity
+2014-03,Radial Velocity
+2014-03,Radial Velocity
+2014-03,Radial Velocity
+2014-03,Radial Velocity
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-03,Microlensing
+2014-03,Transit
+2014-03,Transit
+2014-03,Transit
+2014-04,Transit
+2014-04,Radial Velocity
+2014-04,Transit
+2014-04,Transit
+2014-04,Microlensing
+2014-04,Radial Velocity
+2014-05,Imaging
+2014-05,Radial Velocity
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit Timing Variations
+2014-05,Transit
+2014-05,Transit
+2014-05,Transit
+2014-05,Transit
+2014-05,Transit
+2014-05,Transit
+2014-05,Transit
+2014-05,Transit
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Transit
+2014-06,Radial Velocity
+2014-06,Transit
+2014-06,Transit
+2014-06,Transit
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Transit
+2014-06,Microlensing
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-06,Radial Velocity
+2014-07,Transit
+2014-07,Transit
+2014-07,Radial Velocity
+2014-07,Transit
+2014-07,Transit
+2014-07,Microlensing
+2014-07,Microlensing
+2014-07,Radial Velocity
+2014-07,Radial Velocity
+2014-08,Transit
+2014-08,Transit
+2014-08,Transit
+2014-08,Transit Timing Variations
+2014-08,Transit
+2014-09,Radial Velocity
+2014-10,Radial Velocity
+2014-10,Orbital Brightness Modulation
+2014-10,Orbital Brightness Modulation
+2014-10,Orbital Brightness Modulation
+2014-10,Transit
+2014-10,Transit
+2014-11,Transit
+2014-11,Transit
+2014-11,Transit
+2014-11,Transit
+2014-11,Radial Velocity
+2014-11,Microlensing
+2014-12,Radial Velocity
+2014-12,Transit
+2014-12,Transit
+2014-12,Transit
+2014-12,Transit
+2014-12,Transit
+2014-12,Transit
+2014-12,Transit
+2014-12,Transit
+2014-12,Radial Velocity
+2014-12,Imaging
+2015-01,Radial Velocity
+2015-01,Radial Velocity
+2015-01,Radial Velocity
+2015-01,Radial Velocity
+2015-01,Radial Velocity
+2015-01,Radial Velocity
+2015-01,Transit
+2015-01,Microlensing
+2015-01,Radial Velocity
+2015-01,Radial Velocity
+2015-01,Transit
+2015-02,Radial Velocity
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Transit
+2015-02,Microlensing
+2015-03,Radial Velocity
+2015-03,Radial Velocity
+2015-03,Radial Velocity
+2015-03,Transit
+2015-03,Transit
+2015-03,Transit
+2015-03,Transit
+2015-03,Transit
+2015-03,Transit
+2015-03,Transit
+2015-03,Transit
+2015-03,Transit
+2015-03,Transit
+2015-03,Transit
+2015-04,Radial Velocity
+2015-04,Radial Velocity
+2015-04,Transit
+2015-04,Radial Velocity
+2015-04,Radial Velocity
+2015-04,Radial Velocity
+2015-04,Radial Velocity
+2015-04,Radial Velocity
+2015-04,Radial Velocity
+2015-04,Radial Velocity
+2015-05,Eclipse Timing Variations
+2015-05,Transit
+2015-05,Transit
+2015-05,Transit
+2015-05,Transit
+2015-05,Transit
+2015-05,Microlensing
+2015-05,Imaging
+2015-06,Imaging
+2015-06,Radial Velocity
+2015-06,Radial Velocity
+2015-06,Radial Velocity
+2015-06,Radial Velocity
+2015-06,Radial Velocity
+2015-06,Radial Velocity
+2015-06,Radial Velocity
+2015-06,Transit
+2015-07,Transit
+2015-07,Transit
+2015-07,Transit
+2015-07,Transit
+2015-07,Imaging
+2015-07,Transit
+2015-07,Transit
+2015-07,Transit
+2015-07,Transit
+2015-07,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Radial Velocity
+2015-08,Radial Velocity
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Transit
+2015-08,Microlensing
+2015-08,Transit
+2015-08,Transit
+2015-08,Radial Velocity
+2015-09,Transit
+2015-09,Transit
+2015-09,Radial Velocity
+2015-09,Radial Velocity
+2015-09,Transit
+2015-09,Radial Velocity
+2015-09,Radial Velocity
+2015-10,Transit
+2015-10,Transit
+2015-10,Transit
+2015-11,Transit
+2015-11,Transit
+2015-11,Radial Velocity
+2015-11,Radial Velocity
+2015-11,Imaging
+2015-11,Imaging
+2015-11,Microlensing
+2015-12,Radial Velocity
+2015-12,Transit
+2015-12,Transit
+2015-12,Transit
+2015-12,Transit
+2015-12,Transit
+2015-12,Radial Velocity
+2015-12,Radial Velocity
+2015-12,Radial Velocity
+2015-12,Radial Velocity
+2015-12,Radial Velocity
+2015-12,Radial Velocity
+2015-12,Radial Velocity
+2015-12,Transit
+2015-12,Transit
+2015-12,Transit
+2015-12,Transit
+2015-12,Transit
+2015-12,Transit
+2016-01,Radial Velocity
+2016-01,Radial Velocity
+2016-01,Radial Velocity
+2016-01,Transit
+2016-01,Radial Velocity
+2016-01,Transit
+2016-01,Transit
+2016-02,Radial Velocity
+2016-02,Radial Velocity
+2016-02,Radial Velocity
+2016-02,Radial Velocity
+2016-02,Transit
+2016-02,Transit
+2016-02,Transit
+2016-02,Transit
+2016-02,Transit
+2016-02,Transit
+2016-02,Radial Velocity
+2016-02,Radial Velocity
+2016-02,Radial Velocity
+2016-02,Radial Velocity
+2016-03,Radial Velocity
+2016-03,Radial Velocity
+2016-03,Transit
+2016-03,Transit
+2016-03,Microlensing
+2016-03,Microlensing
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Transit
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Radial Velocity
+2016-04,Transit
+2016-04,Transit
+2016-04,Radial Velocity
+2016-05,Radial Velocity
+2016-05,Radial Velocity
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit Timing Variations
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Transit
+2016-05,Radial Velocity
+2016-05,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Microlensing
+2016-06,Microlensing
+2016-06,Radial Velocity
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-06,Transit
+2016-07,Transit
+2016-07,Transit
+2016-07,Radial Velocity
+2016-07,Radial Velocity
+2016-07,Radial Velocity
+2016-07,Radial Velocity
+2016-07,Transit
+2016-07,Transit
+2016-07,Microlensing
+2016-07,Radial Velocity
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Transit
+2016-08,Pulsation Timing Variations
+2016-08,Transit
+2016-08,Radial Velocity
+2016-08,Radial Velocity
+2016-09,Transit
+2016-09,Transit
+2016-09,Imaging
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-09,Transit
+2016-10,Transit
+2016-10,Radial Velocity
+2016-10,Radial Velocity
+2016-10,Transit
+2016-10,Transit
+2016-10,Transit
+2016-10,Transit
+2016-10,Transit
+2016-10,Transit
+2016-10,Transit
+2016-10,Transit
+2016-10,Radial Velocity
+2016-10,Radial Velocity
+2016-10,Radial Velocity
+2016-10,Transit
+2016-10,Microlensing
+2016-10,Transit
+2016-10,Transit
+2016-10,Radial Velocity
+2016-11,Radial Velocity
+2016-11,Transit
+2016-11,Radial Velocity
+2016-11,Transit
+2016-11,Transit
+2016-11,Microlensing
+2016-11,Microlensing
+2016-12,Transit
+2016-12,Transit
+2016-12,Transit
+2016-12,Transit
+2016-12,Transit
+2016-12,Transit
+2016-12,Transit
+2016-12,Radial Velocity
+2016-12,Radial Velocity
+2016-12,Radial Velocity
+2016-12,Transit
+2016-12,Transit
+2016-12,Transit
+2016-12,Radial Velocity
+2016-12,Radial Velocity
+2016-12,Transit
+2016-12,Transit
+2016-12,Transit
+2016-12,Transit
+2017-01,Imaging
+2017-01,Radial Velocity
+2017-01,Transit
+2017-01,Microlensing
+2017-02,Transit
+2017-02,Transit
+2017-02,Transit
+2017-02,Radial Velocity
+2017-02,Radial Velocity
+2017-02,Transit
+2017-02,Transit
+2017-02,Transit
+2017-02,Transit
+2017-03,Radial Velocity
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-03,Transit
+2017-04,Radial Velocity
+2017-04,Radial Velocity
+2017-04,Radial Velocity
+2017-04,Radial Velocity
+2017-04,Radial Velocity
+2017-04,Radial Velocity
+2017-04,Radial Velocity
+2017-04,Radial Velocity
+2017-04,Radial Velocity
+2017-04,Transit
+2017-04,Transit
+2017-04,Transit
+2017-04,Transit
+2017-04,Transit
+2017-04,Transit
+2017-04,Microlensing
+2017-04,Transit
+2017-04,Transit
+2017-04,Transit
+2017-05,Transit
+2017-05,Radial Velocity
+2017-05,Radial Velocity
+2017-05,Radial Velocity
+2017-05,Transit
+2017-05,Radial Velocity
+2017-05,Microlensing
+2017-05,Radial Velocity
+2017-05,Transit
+2017-05,Radial Velocity
+2017-05,Transit
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Transit
+2017-06,Transit
+2017-06,Transit
+2017-06,Transit
+2017-06,Transit
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Radial Velocity
+2017-06,Transit
+2017-06,Transit
+2017-06,Transit
+2017-06,Transit
+2017-06,Transit
+2017-06,Transit
+2017-06,Eclipse Timing Variations
+2017-07,Transit
+2017-07,Transit
+2017-07,Microlensing
+2017-07,Microlensing
+2017-07,Radial Velocity
+2017-07,Microlensing
+2017-08,Transit Timing Variations
+2017-08,Microlensing
+2017-08,Transit
+2017-08,Transit
+2017-08,Transit
+2017-09,Radial Velocity
+2017-09,Radial Velocity
+2017-09,Radial Velocity
+2017-09,Imaging
+2017-09,Imaging
+2017-09,Radial Velocity
+2017-09,Radial Velocity
+2017-09,Radial Velocity
+2017-10,Radial Velocity
+2017-10,Radial Velocity
+2017-10,Radial Velocity
+2017-10,Transit
+2017-10,Microlensing
+2017-10,Radial Velocity
+2017-10,Radial Velocity
+2017-10,Radial Velocity
+2017-10,Radial Velocity
+2017-10,Radial Velocity
+2017-11,Radial Velocity
+2017-11,Radial Velocity
+2017-11,Radial Velocity
+2017-11,Radial Velocity
+2017-11,Radial Velocity
+2017-11,Radial Velocity
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Transit
+2017-11,Microlensing
+2017-11,Microlensing
+2017-11,Pulsar Timing
+2017-11,Transit
+2017-12,Radial Velocity
+2017-12,Transit
+2017-12,Transit
+2017-12,Transit
+2017-12,Imaging
+2017-12,Radial Velocity
+2017-12,Transit
+2017-12,Transit
+2017-12,Radial Velocity
+2017-12,Transit
+2017-12,Transit
+2017-12,Microlensing
+2018-01,Transit
+2018-01,Transit
+2018-01,Transit
+2018-01,Transit
+2018-01,Transit
+2018-01,Transit
+2018-01,Transit
+2018-01,Transit
+2018-01,Microlensing
+2018-01,Microlensing
+2018-02,Radial Velocity
+2018-02,Transit
+2018-02,Transit
+2018-02,Transit
+2018-02,Transit
+2018-02,Radial Velocity
+2018-02,Radial Velocity
+2018-02,Radial Velocity
+2018-02,Radial Velocity
+2018-02,Radial Velocity
+2018-02,Transit
+2018-02,Transit
+2018-02,Transit
+2018-02,Transit
+2018-02,Transit
+2018-02,Transit
+2018-02,Transit
+2018-02,Transit
+2018-02,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-03,Microlensing
+2018-03,Microlensing
+2018-03,Microlensing
+2018-03,Pulsar Timing
+2018-03,Transit
+2018-03,Transit
+2018-03,Transit
+2018-04,Radial Velocity
+2018-04,Radial Velocity
+2018-04,Transit
+2018-04,Transit
+2018-04,Transit
+2018-04,Transit
+2018-04,Transit
+2018-04,Microlensing
+2018-05,Radial Velocity
+2018-05,Radial Velocity
+2018-05,Transit
+2018-05,Transit
+2018-05,Transit
+2018-05,Transit
+2018-05,Microlensing
+2018-05,Microlensing
+2018-05,Radial Velocity
+2018-05,Microlensing
+2018-05,Radial Velocity
+2018-06,Radial Velocity
+2018-06,Radial Velocity
+2018-06,Radial Velocity
+2018-06,Radial Velocity
+2018-06,Radial Velocity
+2018-06,Transit
+2018-06,Microlensing
+2018-06,Microlensing
+2018-06,Microlensing
+2018-07,Transit
+2018-07,Transit
+2018-07,Transit
+2018-07,Transit
+2018-07,Transit
+2018-07,Transit
+2018-07,Transit
+2018-08,Radial Velocity
+2018-08,Imaging
+2018-08,Radial Velocity
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Transit
+2018-08,Radial Velocity
+2018-08,Radial Velocity
+2018-09,Radial Velocity
+2018-09,Microlensing
+2018-09,Microlensing
+2018-09,Microlensing
+2018-09,Imaging
+2018-10,Radial Velocity
+2018-10,Radial Velocity
+2018-10,Transit
+2018-10,Transit
+2018-10,Transit
+2018-10,Transit
+2018-10,Transit
+2018-10,Transit
+2018-11,Radial Velocity
+2018-11,Eclipse Timing Variations
+2018-11,Transit
+2018-11,Radial Velocity
+2018-11,Radial Velocity
+2018-11,Radial Velocity
+2018-11,Radial Velocity
+2018-11,Radial Velocity
+2018-11,Radial Velocity
+2018-11,Radial Velocity
+2018-11,Transit
+2018-11,Transit
+2018-11,Transit
+2018-11,Transit
+2018-11,Transit
+2018-11,Transit
+2018-11,Transit
+2018-11,Transit
+2018-11,Transit
+2018-11,Microlensing
+2018-11,Microlensing
+2018-11,Microlensing
+2018-11,Microlensing
+2018-11,Transit
+2018-11,Transit
+2018-11,Transit
+2018-12,Transit
+2018-12,Radial Velocity
+2018-12,Radial Velocity
+2018-12,Radial Velocity
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Transit
+2018-12,Microlensing
+2018-12,Transit
+2019-01,Transit
+2019-01,Radial Velocity
+2019-01,Radial Velocity
+2019-01,Transit
+2019-01,Microlensing
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-01,Transit
+2019-02,Transit
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Transit
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Transit
+2019-02,Transit
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Radial Velocity
+2019-02,Microlensing
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-02,Transit
+2019-03,Transit
+2019-03,Radial Velocity
+2019-03,Radial Velocity
+2019-03,Transit
+2019-03,Transit
+2019-03,Transit
+2019-03,Transit
+2019-03,Transit
+2019-03,Transit
+2019-03,Transit
+2019-03,Transit
+2019-03,Transit
+2019-03,Transit
+2019-03,Microlensing
+2019-04,Radial Velocity
+2019-04,Radial Velocity
+2019-04,Radial Velocity
+2019-04,Radial Velocity
+2019-04,Radial Velocity
+2019-04,Radial Velocity
+2019-04,Transit
+2019-04,Radial Velocity
+2019-04,Radial Velocity
+2019-04,Radial Velocity
+2019-04,Transit
+2019-04,Transit
+2019-04,Microlensing
+2019-04,Microlensing
+2019-04,Transit
+2019-04,Transit Timing Variations
+2019-04,Radial Velocity
+2019-04,Transit
+2019-05,Radial Velocity
+2019-05,Radial Velocity
+2019-05,Radial Velocity
+2019-05,Transit
+2019-05,Transit
+2019-05,Radial Velocity
+2019-05,Radial Velocity
+2019-05,Transit
+2019-05,Radial Velocity
+2019-05,Radial Velocity
+2019-05,Transit
+2019-05,Transit
+2019-05,Transit
+2019-05,Transit
+2019-05,Transit
+2019-05,Transit
+2019-05,Eclipse Timing Variations
+2019-05,Transit
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Transit
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Radial Velocity
+2019-06,Imaging
+2019-06,Transit
+2019-06,Transit
+2019-06,Transit
+2019-06,Microlensing
+2019-06,Imaging
+2019-06,Transit
+2019-06,Transit
+2019-06,Transit
+2019-06,Transit
+2019-06,Transit
+2019-06,Transit
+2019-06,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Radial Velocity
+2019-07,Transit
+2019-07,Microlensing
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Transit
+2019-07,Radial Velocity
+2019-07,Radial Velocity
+2019-08,Transit
+2019-08,Radial Velocity
+2019-08,Radial Velocity
+2019-08,Transit
+2019-08,Transit
+2019-08,Transit
+2019-08,Transit
+2019-08,Transit
+2019-08,Disk Kinematics
+2019-08,Transit
+2019-08,Transit
+2019-08,Transit
+2019-08,Transit
+2019-08,Transit
+2019-08,Transit
+2019-08,Transit Timing Variations
+2019-08,Transit
+2019-08,Radial Velocity
+2019-09,Transit
+2019-09,Transit
+2019-09,Radial Velocity
+2019-09,Transit
+2019-09,Transit
+2019-09,Transit
+2019-09,Eclipse Timing Variations
+2019-09,Microlensing
+2019-09,Microlensing
+2019-09,Microlensing
+2019-09,Transit
+2019-10,Transit
+2019-10,Transit
+2019-10,Microlensing
+2019-10,Transit
+2019-10,Transit
+2019-10,Transit
+2019-10,Transit
+2019-10,Transit
+2019-11,Radial Velocity
+2019-11,Radial Velocity
+2019-11,Transit
+2019-11,Transit
+2019-11,Transit
+2019-11,Microlensing
+2019-11,Transit
+2019-11,Transit
+2019-11,Transit
+2019-11,Transit
+2019-11,Transit
+2019-11,Transit
+2019-11,Transit
+2019-11,Transit
+2019-11,Transit
+2019-11,Transit
+2019-12,Radial Velocity
+2019-12,Radial Velocity
+2019-12,Radial Velocity
+2019-12,Radial Velocity
+2019-12,Radial Velocity
+2019-12,Radial Velocity
+2019-12,Microlensing
+2019-12,Transit Timing Variations
+2019-12,Transit Timing Variations
+2019-12,Transit
+2019-12,Radial Velocity
+2020-01,Radial Velocity
+2020-01,Radial Velocity
+2020-01,Radial Velocity
+2020-01,Radial Velocity
+2020-01,Transit
+2020-01,Radial Velocity
+2020-01,Transit
+2020-01,Transit
+2020-01,Transit
+2020-01,Transit
+2020-01,Imaging
+2020-01,Imaging
+2020-02,Transit
+2020-02,Radial Velocity
+2020-02,Radial Velocity
+2020-02,Microlensing
+2020-02,Microlensing
+2020-02,Microlensing
+2020-02,Microlensing
+2020-02,Imaging
+2020-02,Transit
+2020-03,Transit
+2020-03,Transit
+2020-03,Transit
+2020-03,Radial Velocity
+2020-03,Radial Velocity
+2020-03,Radial Velocity
+2020-03,Microlensing
+2020-03,Transit
+2020-03,Transit
+2020-03,Transit
+2020-03,Transit
+2020-03,Transit
+2020-03,Microlensing
+2020-03,Microlensing
+2020-03,Transit
+2020-03,Transit
+2020-03,Transit
+2020-03,Transit
+2020-04,Transit
+2020-04,Transit
+2020-04,Transit
+2020-04,Transit
+2020-04,Transit
+2020-04,Transit
+2020-04,Transit
+2020-04,Radial Velocity
+2020-04,Radial Velocity
+2020-04,Radial Velocity
+2020-04,Radial Velocity
+2020-04,Radial Velocity
+2020-04,Transit
+2020-04,Transit
+2020-04,Transit
+2020-04,Transit
+2020-05,Radial Velocity
+2020-05,Transit
+2020-05,Radial Velocity
+2020-06,Transit
+2020-06,Radial Velocity
+2020-06,Radial Velocity
+2020-06,Transit
+2020-06,Radial Velocity
+2020-06,Radial Velocity
+2020-06,Transit Timing Variations
+2020-06,Microlensing
+2020-06,Microlensing
+2020-06,Transit
+2020-06,Transit
+2020-06,Transit
+2020-07,Radial Velocity
+2020-07,Transit
+2020-07,Transit
+2020-07,Microlensing
+2020-07,Transit
+2020-07,Transit
+2020-07,Transit
+2020-07,Transit
+2020-07,Transit
+2020-07,Transit
+2020-07,Transit
+2020-07,Imaging
+2020-07,Transit
+2020-07,Transit
+2020-08,Radial Velocity
+2020-08,Transit
+2020-08,Transit
+2020-08,Transit
+2020-08,Microlensing
+2020-08,Microlensing
+2020-08,Microlensing
+2020-08,Transit
+2020-08,Transit
+2020-08,Radial Velocity
+2020-09,Radial Velocity
+2020-09,Transit
+2020-09,Transit
+2020-09,Transit
+2020-09,Microlensing
+2020-09,Transit
+2020-09,Transit
+2020-09,Microlensing
+2020-09,Transit
+2020-09,Transit
+2020-09,Transit
+2020-09,Transit
+2020-09,Transit
+2020-09,Transit
+2020-09,Transit
+2020-09,Transit
+2020-09,Transit
+2020-10,Radial Velocity
+2020-10,Transit
+2020-10,Radial Velocity
+2020-10,Radial Velocity
+2020-10,Radial Velocity
+2020-10,Radial Velocity
+2020-10,Transit
+2020-10,Transit
+2020-10,Radial Velocity
+2020-10,Radial Velocity
+2020-10,Radial Velocity
+2020-10,Radial Velocity
+2020-10,Radial Velocity
+2020-10,Radial Velocity
+2020-10,Transit
+2020-10,Microlensing
+2020-10,Microlensing
+2020-10,Microlensing
+2020-10,Microlensing
+2020-10,Microlensing
+2020-10,Transit
+2020-10,Transit
+2020-10,Transit
+2020-11,Radial Velocity
+2020-11,Transit
+2020-11,Transit
+2020-11,Radial Velocity
+2020-11,Transit
+2020-11,Transit
+2020-11,Transit
+2020-11,Transit
+2020-11,Transit
+2020-11,Transit
+2020-11,Transit
+2020-11,Transit
+2020-11,Transit
+2020-12,Radial Velocity
+2020-12,Imaging
+2020-12,Radial Velocity
+2020-12,Radial Velocity
+2020-12,Radial Velocity
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Microlensing
+2020-12,Transit
+2020-12,Microlensing
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2020-12,Transit
+2021-01,Radial Velocity
+2021-01,Imaging
+2021-01,Radial Velocity
+2021-01,Radial Velocity
+2021-01,Transit
+2021-01,Transit
+2021-01,Transit
+2021-01,Transit
+2021-01,Transit
+2021-01,Transit
+2021-01,Transit
+2021-01,Transit
+2021-01,Transit
+2021-02,Radial Velocity
+2021-02,Radial Velocity
+2021-02,Transit
+2021-02,Transit
+2021-02,Transit
+2021-02,Transit
+2021-02,Transit
+2021-02,Transit
+2021-02,Radial Velocity
+2021-02,Radial Velocity
+2021-02,Radial Velocity
+2021-02,Radial Velocity
+2021-02,Radial Velocity
+2021-02,Radial Velocity
+2021-02,Transit
+2021-02,Transit
+2021-02,Transit
+2021-02,Microlensing
+2021-02,Transit
+2021-02,Transit
+2021-02,Transit
+2021-02,Transit
+2021-02,Radial Velocity
+2021-03,Radial Velocity
+2021-03,Transit
+2021-03,Transit
+2021-03,Transit
+2021-03,Transit
+2021-03,Transit
+2021-03,Transit
+2021-04,Radial Velocity
+2021-04,Transit
+2021-04,Transit
+2021-04,Radial Velocity
+2021-04,Radial Velocity
+2021-04,Transit
+2021-04,Radial Velocity
+2021-04,Radial Velocity
+2021-04,Transit
+2021-04,Transit
+2021-04,Transit
+2021-04,Transit
+2021-04,Transit
+2021-04,Transit
+2021-04,Radial Velocity
+2021-04,Imaging
+2021-05,Transit
+2021-05,Radial Velocity
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Microlensing
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-05,Transit
+2021-06,Radial Velocity
+2021-06,Radial Velocity
+2021-06,Radial Velocity
+2021-06,Microlensing
+2021-06,Microlensing
+2021-06,Microlensing
+2021-06,Microlensing
+2021-06,Microlensing
+2021-06,Microlensing
+2021-06,Transit
+2021-06,Transit
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Radial Velocity
+2021-07,Microlensing
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-07,Transit
+2021-08,Imaging
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Microlensing
+2021-08,Microlensing
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-08,Transit
+2021-09,Radial Velocity
+2021-09,Radial Velocity
+2021-09,Radial Velocity
+2021-09,Radial Velocity
+2021-09,Radial Velocity
+2021-09,Radial Velocity
+2021-09,Microlensing
+2021-09,Radial Velocity
+2021-09,Radial Velocity
+2021-09,Transit
+2021-09,Radial Velocity
+2021-09,Transit
+2021-09,Transit
+2021-09,Transit
+2021-09,Transit
+2021-09,Transit
+2021-09,Transit
+2021-10,Imaging
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Transit
+2021-10,Transit
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Radial Velocity
+2021-10,Orbital Brightness Modulation
+2021-10,Orbital Brightness Modulation
+2021-10,Orbital Brightness Modulation
+2021-10,Transit
+2021-10,Microlensing
+2021-10,Transit
+2021-10,Transit
+2021-10,Transit
+2021-10,Transit
+2021-10,Transit
+2021-10,Transit
+2021-10,Radial Velocity
+2021-10,Transit
+2021-10,Transit
+2021-11,Transit
+2021-11,Radial Velocity
+2021-11,Radial Velocity
+2021-11,Radial Velocity
+2021-11,Radial Velocity
+2021-11,Microlensing
+2021-11,Microlensing
+2021-11,Microlensing
+2021-11,Microlensing
+2021-11,Transit
+2021-11,Transit
+2021-11,Microlensing
+2021-11,Microlensing
+2021-11,Microlensing
+2021-11,Microlensing
+2021-11,Transit
+2021-11,Transit
+2021-11,Radial Velocity
+2021-12,Imaging
+2021-12,Transit
+2021-12,Radial Velocity
+2021-12,Radial Velocity
+2021-12,Radial Velocity
+2021-12,Radial Velocity
+2021-12,Radial Velocity
+2021-12,Radial Velocity
+2021-12,Transit
+2021-12,Radial Velocity
+2021-12,Transit
+2021-12,Transit
+2021-12,Transit
+2021-12,Transit
+2021-12,Transit
+2021-12,Transit Timing Variations
+2021-12,Imaging
+2021-12,Radial Velocity
+2021-12,Radial Velocity
+2022-01,Transit
+2022-01,Radial Velocity
+2022-01,Radial Velocity
+2022-01,Radial Velocity
+2022-01,Radial Velocity
+2022-01,Radial Velocity
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-01,Transit
+2022-02,Transit
+2022-02,Radial Velocity
+2022-02,Radial Velocity
+2022-02,Transit
+2022-02,Microlensing
+2022-02,Microlensing
+2022-02,Microlensing
+2022-02,Microlensing
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Microlensing
+2022-02,Microlensing
+2022-02,Microlensing
+2022-02,Microlensing
+2022-02,Microlensing
+2022-02,Microlensing
+2022-02,Microlensing
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-02,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Radial Velocity
+2022-03,Microlensing
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Transit
+2022-03,Radial Velocity
+2022-04,Imaging
+2022-04,Radial Velocity
+2022-04,Radial Velocity
+2022-04,Radial Velocity
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Eclipse Timing Variations
+2022-04,Eclipse Timing Variations
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Transit
+2022-04,Radial Velocity
+2022-04,Radial Velocity
+2022-04,Radial Velocity
+2022-04,Transit
+2022-05,Transit
+2022-05,Transit
+2022-05,Transit
+2022-05,Transit
+2022-05,Transit
+2022-05,Imaging
+2022-05,Transit
+2022-05,Transit
+2022-05,Transit
+2022-05,Transit Timing Variations
+2022-05,Radial Velocity
+2022-05,Radial Velocity
+2022-05,Transit
+2022-05,Transit
+2022-05,Transit
+2022-05,Transit
+2022-05,Transit
+2022-05,Imaging
+2022-05,Radial Velocity
+2022-06,Radial Velocity
+2022-06,Radial Velocity
+2022-06,Radial Velocity
+2022-06,Radial Velocity
+2022-06,Radial Velocity
+2022-06,Microlensing
+2022-06,Microlensing
+2022-06,Microlensing
+2022-06,Transit
+2022-06,Radial Velocity
+2022-06,Transit
+2022-06,Transit
+2022-07,Transit
+2022-07,Transit
+2022-07,Radial Velocity
+2022-07,Transit
+2022-07,Radial Velocity
+2022-07,Transit
+2022-07,Transit
+2022-07,Microlensing
+2022-07,Microlensing
+2022-07,Microlensing
+2022-07,Transit
+2022-07,Transit
+2022-07,Transit
+2022-08,Imaging
+2022-08,Transit
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Microlensing
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-08,Transit
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Astrometry
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Transit
+2022-09,Transit
+2022-09,Transit
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Radial Velocity
+2022-09,Microlensing
+2022-09,Microlensing
+2022-09,Microlensing
+2022-09,Microlensing
+2022-09,Microlensing
+2022-09,Microlensing
+2022-09,Transit
+2022-09,Transit
+2022-09,Microlensing
+2022-09,Microlensing
+2022-09,Transit
+2022-09,Radial Velocity
+2022-09,Transit
+2022-09,Transit
+2022-09,Transit
+2022-09,Transit
+2022-09,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Microlensing
+2022-10,Microlensing
+2022-10,Transit
+2022-10,Microlensing
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Transit
+2022-10,Radial Velocity
+2022-11,Radial Velocity
+2022-11,Radial Velocity
+2022-11,Radial Velocity
+2022-11,Transit
+2022-11,Imaging
+2022-11,Microlensing
+2022-11,Microlensing
+2022-11,Microlensing
+2022-11,Microlensing
+2022-11,Transit
+2022-11,Transit
+2022-11,Transit
+2022-11,Transit
+2022-11,Transit
+2022-11,Transit
+2022-11,Transit
+2022-11,Transit
+2022-11,Transit
+2022-11,Transit
+2022-12,Radial Velocity
+2022-12,Radial Velocity
+2022-12,Radial Velocity
+2022-12,Transit
+2022-12,Transit
+2022-12,Microlensing
+2022-12,Microlensing
+2022-12,Microlensing
+2022-12,Microlensing
+2022-12,Transit Timing Variations
+2022-12,Microlensing
+2022-12,Microlensing
+2022-12,Transit
+2022-12,Radial Velocity
+2023-01,Radial Velocity
+2023-01,Radial Velocity
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-01,Transit
+2023-02,Imaging
+2023-02,Transit Timing Variations
+2023-02,Radial Velocity
+2023-02,Transit
+2023-02,Transit
+2023-02,Radial Velocity
+2023-02,Transit
+2023-02,Radial Velocity
+2023-02,Transit
+2023-02,Transit
+2023-02,Transit
+2023-02,Transit
+2023-02,Transit
+2023-02,Transit
+2023-02,Transit
+2023-02,Transit
+2023-02,Transit
+2023-02,Transit
+2023-02,Transit
+2023-02,Radial Velocity
+2023-03,Imaging
+2023-03,Radial Velocity
+2023-03,Transit
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Microlensing
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-03,Transit
+2023-04,Transit
+2023-04,Microlensing
+2023-04,Radial Velocity
+2023-04,Transit
+2023-04,Radial Velocity
+2023-04,Radial Velocity
+2023-04,Radial Velocity
+2023-04,Microlensing
+2023-04,Imaging
+2023-04,Transit
+2023-04,Transit
+2023-04,Transit
+2023-04,Transit
+2023-04,Transit
+2023-04,Transit
+2023-04,Imaging
+2023-05,Radial Velocity
+2023-05,Radial Velocity
+2023-05,Transit
+2023-05,Radial Velocity
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-05,Transit
+2023-06,Radial Velocity
+2023-06,Radial Velocity
+2023-06,Transit
+2023-06,Radial Velocity
+2023-06,Radial Velocity
+2023-06,Radial Velocity
+2023-06,Radial Velocity
+2023-06,Microlensing
+2023-06,Microlensing
+2023-06,Microlensing
+2023-06,Microlensing
+2023-06,Microlensing
+2023-06,Microlensing
+2023-06,Microlensing
+2023-06,Microlensing
+2023-06,Microlensing
+2023-06,Transit
+2023-06,Transit
+2023-06,Transit
+2023-06,Transit
+2023-06,Transit
+2023-06,Transit
+2023-06,Transit
+2023-06,Transit
+2023-06,Transit
+2023-07,Radial Velocity
+2023-07,Radial Velocity
+2023-07,Radial Velocity
+2023-07,Transit
+2023-07,Radial Velocity
+2023-07,Imaging
+2023-07,Radial Velocity
+2023-07,Transit
+2023-07,Transit
+2023-07,Microlensing
+2023-07,Microlensing
+2023-07,Microlensing
+2023-07,Microlensing
+2023-07,Microlensing
+2023-07,Imaging
+2023-07,Transit
+2023-07,Radial Velocity
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-07,Radial Velocity
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-07,Transit
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-08,Transit
+2023-08,Transit
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-08,Transit
+2023-08,Transit
+2023-08,Transit
+2023-08,Transit
+2023-08,Transit
+2023-08,Radial Velocity
+2023-08,Radial Velocity
+2023-09,Radial Velocity
+2023-09,Transit
+2023-09,Transit
+2023-09,Astrometry
+2023-09,Transit
+2023-09,Transit
+2023-09,Transit Timing Variations
+2023-09,Transit
+2023-09,Transit
+2023-09,Transit
+2023-10,Radial Velocity
+2023-10,Radial Velocity
+2023-10,Radial Velocity
+2023-10,Transit
+2023-10,Radial Velocity
+2023-10,Radial Velocity
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Microlensing
+2023-10,Microlensing
+2023-10,Transit Timing Variations
+2023-10,Transit
+2023-10,Transit
+2023-10,Radial Velocity
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Transit
+2023-10,Radial Velocity
+2023-10,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Radial Velocity
+2023-11,Eclipse Timing Variations
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-11,Transit
+2023-12,Transit Timing Variations
+2023-12,Radial Velocity
+2023-12,Radial Velocity
+2023-12,Radial Velocity
+2023-12,Microlensing
+2023-12,Transit
+2023-12,Transit
+2023-12,Transit
+2023-12,Transit
+2023-12,Transit
+2023-12,Transit
+2023-12,Transit
+2024-01,Imaging
+2024-01,Imaging
+2024-01,Imaging
+2024-01,Imaging
+2024-01,Imaging
+2024-01,Radial Velocity
+2024-01,Radial Velocity
+2024-01,Radial Velocity
+2024-01,Radial Velocity
+2024-01,Radial Velocity
+2024-01,Imaging
+2024-01,Imaging
+2024-01,Radial Velocity
+2024-01,Transit
+2024-01,Radial Velocity
+2024-01,Radial Velocity
+2024-01,Transit
+2024-01,Transit
+2024-02,Transit
+2024-02,Transit
+2024-02,Transit
+2024-02,Transit
+2024-02,Transit
+2024-02,Transit
+2024-02,Transit
+2024-02,Transit
+2024-02,Radial Velocity
+2024-02,Transit
+2024-02,Transit
+2024-02,Radial Velocity
+2024-02,Transit
+2024-02,Radial Velocity
+2024-03,Transit
+2024-03,Radial Velocity
+2024-03,Radial Velocity
+2024-03,Transit
+2024-03,Radial Velocity
+2024-03,Microlensing
+2024-03,Microlensing
+2024-03,Microlensing
+2024-03,Microlensing
+2024-03,Microlensing
+2024-03,Pulsar Timing
+2024-03,Microlensing
+2024-03,Radial Velocity
+2024-03,Microlensing
+2024-03,Microlensing
+2024-03,Microlensing
+2024-03,Transit
+2024-03,Transit
+2024-03,Transit
+2024-03,Transit
+2024-04,Transit
+2024-04,Transit
+2024-04,Transit
+2024-04,Microlensing
+2024-04,Microlensing
+2024-04,Transit
+2024-04,Radial Velocity
+2024-04,Transit
+2024-05,Transit
+2024-05,Imaging
+2024-05,Microlensing
+2024-05,Microlensing
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-05,Transit
+2024-06,Transit
+2024-06,Imaging
+2024-06,Transit
+2024-06,Microlensing
+2024-06,Microlensing
+2024-06,Microlensing
+2024-06,Microlensing
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Radial Velocity
+2024-06,Radial Velocity
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Transit
+2024-06,Imaging
+2024-06,Imaging
+2024-07,Radial Velocity
+2024-07,Radial Velocity
+2024-07,Radial Velocity
+2024-07,Radial Velocity
+2024-07,Microlensing
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit Timing Variations
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-07,Transit
+2024-08,Microlensing
+2024-08,Radial Velocity
+2024-08,Radial Velocity
+2024-08,Transit
+2024-08,Transit
+2024-08,Transit
+2024-08,Transit
+2024-08,Transit
+2024-08,Transit
+2024-08,Transit
+2024-09,Transit
+2024-09,Radial Velocity
+2024-09,Radial Velocity
+2024-09,Transit
+2024-09,Microlensing
+2024-09,Microlensing
+2024-09,Transit
+2024-09,Radial Velocity
+2024-09,Transit
+2024-09,Transit
+2024-09,Transit
+2024-09,Transit
+2024-09,Transit Timing Variations
+2024-09,Transit
+2024-09,Transit
+2024-09,Transit
+2024-09,Transit
+2024-10,Radial Velocity
+2024-10,Transit Timing Variations
+2024-10,Transit
+2024-10,Transit
+2024-10,Transit
+2024-10,Transit
+2024-10,Transit
+2024-10,Transit
+2024-10,Transit
+2024-10,Transit
+2024-10,Transit
+2024-10,Transit
+2024-11,Transit
+2024-11,Radial Velocity
+2024-11,Microlensing
+2024-11,Microlensing
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-11,Transit
+2024-12,Microlensing
+2024-12,Transit
+2024-12,Transit
+2024-12,Transit
+2024-12,Transit
+2024-12,Transit Timing Variations
+2024-12,Transit
+2024-12,Transit
+2024-12,Transit
+2024-12,Transit
+2025-01,Radial Velocity
+2025-01,Transit
+2025-01,Transit
+2025-01,Radial Velocity
+2025-01,Radial Velocity
+2025-01,Transit
+2025-01,Transit
+2025-01,Transit
+2025-01,Radial Velocity
+2025-02,Radial Velocity
+2025-02,Transit
+2025-02,Astrometry
+2025-02,Astrometry
+2025-02,Radial Velocity
+2025-02,Radial Velocity
+2025-02,Transit
+2025-02,Radial Velocity
+2025-02,Transit
+2025-02,Transit
+2025-02,Radial Velocity
+2025-02,Transit
+2025-02,Transit
+2025-02,Transit
+2025-02,Transit
