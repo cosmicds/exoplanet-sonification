@@ -419,7 +419,7 @@
 import { defineComponent, PropType } from 'vue';
 import { csvFormatRows, csvParse } from "d3-dsv";
 import { distance } from "@wwtelescope/astro";
-import { Color, Constellations, Folder, Grids, Layer, LayerManager, RenderContext, Settings, SpreadSheetLayer, Texture, WWTControl } from "@wwtelescope/engine"; //Grids, Poly
+import { Color, Coordinates, Constellations, Folder, Grids, Layer, LayerManager, RenderContext, Settings, SpreadSheetLayer, Texture, WWTControl } from "@wwtelescope/engine"; //Grids, Poly
 import { AltTypes, AltUnits, MarkerScales, PlotTypes, RAUnits, Thumbnail } from "@wwtelescope/engine-types"; //ImageSetType, PointScaleTypes
 import { GotoRADecZoomParams } from "@wwtelescope/engine-pinia";
 import L, { Map } from "leaflet"; //LeafletMouseEvent
@@ -443,8 +443,6 @@ import {
 } from "./exoplanetData";
 
 // import qrcodeVue from 'qrcode.vue'; // reserved for kiosk mode
-
-
 
 const soundCache: Record<string, AudioBuffer> = {};
 let masterCompressor: DynamicsCompressorNode | null = null;
@@ -477,6 +475,7 @@ function getCompressor(ctx: AudioContext): DynamicsCompressorNode {
 
 const D2R = Math.PI / 180;
 const R2D = 180 / Math.PI;
+const PARSEC_TO_AU = 206265;
 
 async function loadGuitarSound(ctx: AudioContext, noteFile: string): Promise<AudioBuffer | null> {
   if (!noteFile) return null; // safety
@@ -556,6 +555,7 @@ const ALL_POINTS = Object.values(DATA_TABLES).flat();
 const ALL_POINTS_BY_DATE = [...ALL_POINTS].sort(
   (a, b) => a.discPubdate.getTime() - b.discPubdate.getTime()
 );
+console.log(ALL_POINTS_BY_DATE);
 
 type Table = typeof DATA_TABLES[144]; //IDK
 
@@ -620,7 +620,7 @@ declare global {
 type ToolType = "crossfade" | "sky-survey" | null;
 type SheetType = "text" | "video" | null;
 
-const discoveryTypeColors: Record<string, string> = {
+const discoveryTypeColors: Record<keyof typeof CSVS, string> = {
   "transit":                      "#58cc75",
   "Radial Velocity":               "#de4d86",
   "microlensing":                  "#829be8",
@@ -850,6 +850,7 @@ export default defineComponent({
   },
 
   mounted() {
+    console.log(this);
     this.currentMonthIndex = this.totalMonths - 1;
     document.addEventListener('pointerdown', this._ensureAudio, { once: true });
 
@@ -1463,17 +1464,23 @@ export default defineComponent({
         p => p.discPubdate >= date && p.discPubdate < monthEnd
       );
 
-      const maxTones = 6;
+      const maxTones = 20;
       const staggerMs = 40;
       const audioOffsetMs = 50; // let WWT render the new dots before playing
       newThisMonth.slice(0, maxTones).forEach((p, i) => {
         const value = Number(p.plOrbper);
         if (Number.isFinite(value)) {
-          const color = discoveryTypeColors[p.cat] ?? '#7563ab';
+          const color = discoveryTypeColors[p.cat.toLowerCase()] ?? '#7563ab';
           setTimeout(() => {
             this.playPointTone(value);
-            if (this.modeReactive === '2D') this.spawnPing2D(p.ra, p.dec, color); // 2D-only (revert if 3D pings cause issues)
-            // this.spawnPing(p.ra, p.dec, color);
+            if (this.modeReactive === '2D') {
+              this.spawnPing2D(p.ra, p.dec, color); // 2D-only (revert if 3D pings cause issues)
+            } else {
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-expect-error `raDecTo3dAu` exists
+              const cartesian = Coordinates.raDecTo3dAu(p.ra / 15, p.dec, p.gdist * PARSEC_TO_AU);
+              this.spawnPing3D(cartesian.x, cartesian.y, cartesian.z, color);
+            }
           }, audioOffsetMs + i * staggerMs);
         }
       });
@@ -1747,7 +1754,10 @@ export default defineComponent({
     },
 
     spawnPing3D(x: number, y: number, z: number, color: string) {
-      const screen = this.findScreenPointForCoordinates
+      // JC: For some reason, I couldn't get the Pinia mapping to work inside this component
+      // but this works just as well (it's what the Pinia store calls), so whatever
+      const screen = WWTControl.singleton.getScreenPointForCoordinates(x, y, z);
+      this.maybeCreatePingAtScreenPoint(screen.x, screen.y, color);
     },
 
     spawnPing(raDeg: number, decDeg: number, color: string) {
