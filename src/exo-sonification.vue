@@ -475,7 +475,7 @@ function getCompressor(ctx: AudioContext): DynamicsCompressorNode {
 
 const D2R = Math.PI / 180;
 const R2D = 180 / Math.PI;
-// const PARSEC_TO_AU = 206264.806;
+const PARSEC_TO_AU = 206264.806;
 
 async function loadGuitarSound(ctx: AudioContext, noteFile: string): Promise<AudioBuffer | null> {
   if (!noteFile) return null; // safety
@@ -876,7 +876,7 @@ export default defineComponent({
         layer.set_xAxisColumn(0);
         layer.set_yAxisColumn(1);
         layer.set_zAxisColumn(2);
-        layer.set_cartesianScale(AltUnits.astronomicalUnits);
+        layer.set_cartesianScale(AltUnits.parsecs);
         layer.set_scaleFactor(100);
         layer.set_coordinatesType(CoordinatesType.rectangular);
         layer.set_astronomical(true);
@@ -1493,9 +1493,9 @@ export default defineComponent({
       );
 
       const maxTones = 20;
-      // const staggerMs = 40;
-      // const audioOffsetMs = 50; // let WWT render the new dots before playing
-      newThisMonth.slice(0, maxTones).forEach((p, _i) => {
+      const staggerMs = 40;
+      const audioOffsetMs = 50; // let WWT render the new dots before playing
+      newThisMonth.slice(0, maxTones).forEach((p, i) => {
         const value = Number(p.plOrbper);
         if (Number.isFinite(value)) {
           const color = discoveryTypeColors[p.cat.toLowerCase()] ?? '#7563ab';
@@ -1504,14 +1504,13 @@ export default defineComponent({
             if (this.modeReactive === '2D') {
               this.spawnPing2D(p.ra, p.dec, color); // 2D-only (revert if 3D pings cause issues)
             } else {
-              const distance = p.gdist;
+              const distance = p.gdist * PARSEC_TO_AU;
               // eslint-disable-next-line @typescript-eslint/ban-ts-comment
               // @ts-expect-error `raDecTo3dAu` exists
               const cartesian = Coordinates.raDecTo3dAu(p.ra / 15, p.dec, distance);
               this.spawnPing3D(cartesian.x, cartesian.y, cartesian.z, color);
             }
-          // }, audioOffsetMs + i * staggerMs);
-          }, 0);
+          }, audioOffsetMs + i * staggerMs);
         }
       });
     },
@@ -1780,8 +1779,10 @@ export default defineComponent({
     },
 
     spawnPing2D(raDeg: number, decDeg: number, color: string) {
+      console.log(`SPAWN PING 2D: ${raDeg}, ${decDeg}, ${color}`);
       const screen = this.findScreenPointForRADec({ ra: raDeg, dec: decDeg });
       this.maybeCreatePingAtScreenPoint(screen.x, screen.y, color); 
+      console.log("========");
     },
 
     spawnPing3D(x: number, y: number, z: number, color: string) {
