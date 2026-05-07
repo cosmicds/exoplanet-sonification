@@ -420,7 +420,7 @@ import { defineComponent, PropType } from 'vue';
 import { csvFormatRows, csvParse } from "d3-dsv";
 import { distance } from "@wwtelescope/astro";
 import { Color, Coordinates, Constellations, Folder, Grids, Layer, LayerManager, RenderContext, Settings, SpreadSheetLayer, Texture, WWTControl } from "@wwtelescope/engine"; //Grids, Poly
-import { AltTypes, AltUnits, MarkerScales, PlotTypes, RAUnits, Thumbnail } from "@wwtelescope/engine-types"; //ImageSetType, PointScaleTypes
+import { AltTypes, AltUnits, CoordinatesType, MarkerScales, PlotTypes, RAUnits, Thumbnail } from "@wwtelescope/engine-types"; //ImageSetType, PointScaleTypes
 import { GotoRADecZoomParams } from "@wwtelescope/engine-pinia";
 import L, { Map } from "leaflet"; //LeafletMouseEvent
 import { tween } from "femtotween";
@@ -475,7 +475,7 @@ function getCompressor(ctx: AudioContext): DynamicsCompressorNode {
 
 const D2R = Math.PI / 180;
 const R2D = 180 / Math.PI;
-const PARSEC_TO_AU = 206265;
+// const PARSEC_TO_AU = 206264.806;
 
 async function loadGuitarSound(ctx: AudioContext, noteFile: string): Promise<AudioBuffer | null> {
   if (!noteFile) return null; // safety
@@ -787,7 +787,8 @@ export default defineComponent({
         // Initial 3D view: galactic center region (RA 280°, Dec −50°)
         raRad: 280 * D2R,
         decRad: -50 * D2R,
-        zoomDeg: 289555092.0 * 6
+        // zoomDeg: 289555092.0 * 6
+        zoomDeg: 60,
       } as Omit<GotoRADecZoomParams,'instant'>,
       position2D: initial2DPosition as Omit<GotoRADecZoomParams,'instant'>,
       initial2DPosition,
@@ -809,7 +810,8 @@ export default defineComponent({
       idealPosition: idealPosition, //fullwavePosition
 
 
-      minZoom: 3000000,//160763995.5927744,
+      minZoom: 10,
+      // minZoom: 3000000,//160763995.5927744,
       maxZoom: 22328103718.39476,
 
       //isAnimating: true, // Animation state WWW
@@ -850,12 +852,38 @@ export default defineComponent({
   },
 
   mounted() {
-    console.log(this);
+
     this.currentMonthIndex = this.totalMonths - 1;
     document.addEventListener('pointerdown', this._ensureAudio, { once: true });
 
     this.waitForReady().then(async () => {
       this.backgroundImagesets = [...skyBackgroundImagesets];
+
+      // TESTING
+      const position = {
+        "x": -565.3761878430736,
+        "y": 131.72744459744672,
+        "z": -151.6497496201696
+      };
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      window.app = this; window.wwt = WWTControl.singleton; window.position = position;
+      this.createTableLayer({
+        name: "Test",
+        referenceFrame: "Sky",
+        dataCsv: `x\ty\tz\r\n${position.x}\t${position.y}\t${position.z}`,
+      }).then(layer => {
+        layer.set_xAxisColumn(0);
+        layer.set_yAxisColumn(1);
+        layer.set_zAxisColumn(2);
+        layer.set_cartesianScale(AltUnits.astronomicalUnits);
+        layer.set_scaleFactor(100);
+        layer.set_coordinatesType(CoordinatesType.rectangular);
+        layer.set_astronomical(true);
+        layer.set_showFarSide(true);
+        layer.set_markerScale(MarkerScales.screen);
+        console.log(layer);
+      });
       
       // initialize the view to black so that we don't flicker DSS
       this.applySetting(["galacticMode", true]);
@@ -946,7 +974,7 @@ export default defineComponent({
             layer.set_lngColumn(1); // RA
             layer.set_latColumn(2); // DEC
             layer.set_altColumn(3); // DIST
-            layer.set_altUnit(AltUnits.parsecs);
+            layer.set_altUnit(AltUnits.astronomicalUnits);
             layer.set_altType(AltTypes.distance);
 
             layer.set_opacity(1);
@@ -1465,9 +1493,9 @@ export default defineComponent({
       );
 
       const maxTones = 20;
-      const staggerMs = 40;
-      const audioOffsetMs = 50; // let WWT render the new dots before playing
-      newThisMonth.slice(0, maxTones).forEach((p, i) => {
+      // const staggerMs = 40;
+      // const audioOffsetMs = 50; // let WWT render the new dots before playing
+      newThisMonth.slice(0, maxTones).forEach((p, _i) => {
         const value = Number(p.plOrbper);
         if (Number.isFinite(value)) {
           const color = discoveryTypeColors[p.cat.toLowerCase()] ?? '#7563ab';
@@ -1476,12 +1504,14 @@ export default defineComponent({
             if (this.modeReactive === '2D') {
               this.spawnPing2D(p.ra, p.dec, color); // 2D-only (revert if 3D pings cause issues)
             } else {
+              const distance = p.gdist;
               // eslint-disable-next-line @typescript-eslint/ban-ts-comment
               // @ts-expect-error `raDecTo3dAu` exists
-              const cartesian = Coordinates.raDecTo3dAu(p.ra / 15, p.dec, p.gdist * PARSEC_TO_AU);
+              const cartesian = Coordinates.raDecTo3dAu(p.ra / 15, p.dec, distance);
               this.spawnPing3D(cartesian.x, cartesian.y, cartesian.z, color);
             }
-          }, audioOffsetMs + i * staggerMs);
+          // }, audioOffsetMs + i * staggerMs);
+          }, 0);
         }
       });
     },
@@ -1693,12 +1723,12 @@ export default defineComponent({
       this.setForegroundImageByName("Solar System");
       this.updateLayerScales();
 
-      return this.gotoRADecZoom({
-        ...this.position3D,
-        instant: true,
-      })/*.catch((err) => {
-        //console.log(err);
-      })*/;
+      // return this.gotoRADecZoom({
+      //   ...this.position3D,
+      //   instant: true,
+      // })/*.catch((err) => {
+      //   //console.log(err);
+      // })*/;
 
     },
 
@@ -1735,13 +1765,14 @@ export default defineComponent({
 
       container.addEventListener("animationend", (event: AnimationEvent) => {
         if (event.animationName == "ping-expand") {
-          const target = event.target as HTMLDivElement;
-          target?.remove();
+          // const target = event.target as HTMLDivElement;
+          // target?.remove();
         }
       });
     },
 
     maybeCreatePingAtScreenPoint(x: number, y: number, color: string) {
+      console.log(x, y, color);
       if (x < -50 || x > window.innerWidth + 50 ||
           y < -50 || y > window.innerHeight + 50) return;
 
@@ -1754,10 +1785,12 @@ export default defineComponent({
     },
 
     spawnPing3D(x: number, y: number, z: number, color: string) {
+      console.log(`SPAWN PING 3D: ${x}, ${y}, ${z}, ${color}`);
       // JC: For some reason, I couldn't get the Pinia mapping to work inside this component
       // but this works just as well (it's what the Pinia store calls), so whatever
-      const screen = WWTControl.singleton.getScreenPointForCoordinates(x, y, z);
+      const screen = WWTControl.singleton.getScreenPointForCoordinates(x, z, y);
       this.maybeCreatePingAtScreenPoint(screen.x, screen.y, color);
+      console.log("======");
     },
 
     spawnPing(raDeg: number, decDeg: number, color: string) {
@@ -1902,6 +1935,7 @@ export default defineComponent({
     wwtOnPointerDown(event: PointerEvent) {
       this.isPointerMoving = false;
       this.pointerStartPosition = { x: event.pageX, y: event.pageY };
+      console.log(event.pageX, event.pageY);
     },
 
     wwtOnPointerUp(event: PointerEvent) {
