@@ -825,7 +825,7 @@ ViewMoverSlewHacked.prototype.init = function (from, to) {
     var latDist = Math.abs(from.lat - to.lat);
     var distance = Math.sqrt(latDist * latDist + lngDist * lngDist);
     zoomUpTarget = Math.ceil(Math.log(Math.max(from.zoom, to.zoom)) / Math.log(10));
-    travelTime = (distance / 180) * (360 / zoomUpTarget) * this._travelTimeFactor;
+    travelTime = (distance / 180) * Math.log(WWTControl.singleton.get_zoomMax() / zoomUpTarget) * this._travelTimeFactor;
     var rotateTime = Math.max(Math.abs(from.angle - to.angle), Math.abs(from.rotation - to.rotation));
     var logDistUp = Math.max(Math.abs(logN(zoomUpTarget, 2) - logN(from.zoom, 2)), rotateTime);
     this._upTargetTime = this._upTimeFactor * logDistUp;
@@ -931,8 +931,11 @@ export function gotoTargetFullHacked(control, noZoom, instant, cameraParams, stu
         }
         control._mover_Midpoint();
     } else {
+        // Hacked slew-style
         // control.set__mover(ViewMoverSlewHacked.create(control.renderContext.viewCamera, cameraParams, duration));
-        duration = duration ?? 2 * 1000;
+      
+        // Ken Burns-style
+        duration = (duration ?? 2) * 1000;
         const start = new Date();
         const end = new Date(start.getTime() + duration); 
         control.set__mover(new ViewMoverKenBurnsStyle(control.renderContext.viewCamera, cameraParams, duration, start, end));
