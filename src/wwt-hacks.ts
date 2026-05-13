@@ -4,10 +4,10 @@
 /* eslint-disable */
 
 import {
-  Color, Colors, Constellations, Coordinates, Grids,
+  CameraParameters, Color, Colors, Constellations, Coordinates, Grids,
   LayerManager, LayerMap, Matrix3d, PushPin, RenderContext, Settings, SimpleLineShader, SpaceTimeController,
   SpreadSheetLayer, Text3d, Text3dBatch, TextShader, URLHelpers,
-  Vector3d, WWTControl
+  Vector3d, ViewMoverKenBurnsStyle, WWTControl
 } from "@wwtelescope/engine";
 
 import { drawExoplanetCloud, isExoplanetLayerName } from "./exoplanet-renderer";
@@ -764,3 +764,178 @@ function drawFigures3D(renderContext) {
 // in 3D mode), not via a Grids.drawStars3D wrapper — this app disables
 // `solarSystemStars`, so the engine never calls drawStars3D and any wrapper
 // there would be dead code.
+
+export function ViewMoverSlewHacked() {
+    this._upTargetTime = 0;
+    this._downTargetTime = 0;
+    this._toTargetTime = 0;
+    this._upTimeFactor = 0.6;
+    this._downTimeFactor = 0.6;
+    this._travelTimeFactor = 7;
+    this._midpointFired = false;
+    this._complete = false;
+}
+
+ViewMoverSlewHacked.create = function (from, to, duration) {
+    var temp = new ViewMoverSlewHacked();
+    temp.init(from, to);
+    if (duration) {
+      const originalTargetTime = temp._toTargetTime;
+      const upFraction = temp._upTargetTime / originalTargetTime;
+      const downFraction = temp._downTargetTime / originalTargetTime;
+      temp._upTargetTime = duration * upFraction;
+      temp._downTargetTime = duration * downFraction;
+      temp._toTargetTime = duration; 
+    }
+    return temp;
+};
+
+ViewMoverSlewHacked.createUpDown = function (from, to, upDowFactor) {
+    var temp = new ViewMoverSlew();
+    temp._upTimeFactor = temp._downTimeFactor = upDowFactor;
+    temp.init(from.copy(), to.copy());
+    return temp;
+};
+
+function logN(value, base) {
+  return Math.log(value) / Math.log(base);
+}
+
+ViewMoverSlewHacked.prototype.init = function (from, to) {
+    if (Math.abs(from.lng - to.lng) > 180) {
+        if (from.lng > to.lng) {
+            from.lng -= 360;
+        }
+        else {
+            from.lng += 360;
+        }
+    }
+    if (to.zoom <= 0) {
+        to.zoom = 360;
+    }
+    if (from.zoom <= 0) {
+        from.zoom = 360;
+    }
+    this._from = from;
+    this._to = to;
+    this._fromTime = SpaceTimeController.get_metaNow();
+    var zoomUpTarget = 360;
+    var travelTime;
+    var lngDist = Math.abs(from.lng - to.lng);
+    var latDist = Math.abs(from.lat - to.lat);
+    var distance = Math.sqrt(latDist * latDist + lngDist * lngDist);
+    zoomUpTarget = Math.ceil(Math.log(Math.max(from.zoom, to.zoom)) / Math.log(10));
+    travelTime = (distance / 180) * (360 / zoomUpTarget) * this._travelTimeFactor;
+    var rotateTime = Math.max(Math.abs(from.angle - to.angle), Math.abs(from.rotation - to.rotation));
+    var logDistUp = Math.max(Math.abs(logN(zoomUpTarget, 2) - logN(from.zoom, 2)), rotateTime);
+    this._upTargetTime = this._upTimeFactor * logDistUp;
+    this._downTargetTime = this._upTargetTime + travelTime;
+    var logDistDown = Math.abs(logN(zoomUpTarget, 2) - logN(to.zoom, 2));
+    this._toTargetTime = this._downTargetTime + Math.max((this._downTimeFactor * logDistDown), rotateTime);
+    this._fromTop = from.copy();
+    this._fromTop.zoom = zoomUpTarget;
+    this._fromTop.angle = (from.angle + to.angle) / 2;
+    this._fromTop.rotation = (from.rotation + to.rotation) / 2;
+    this._toTop = to.copy();
+    this._toTop.zoom = this._fromTop.zoom;
+    this._toTop.angle = this._fromTop.angle;
+    this._toTop.rotation = this._fromTop.rotation;
+};
+
+ViewMoverSlewHacked.prototype.get_complete = function () {
+    return this._complete;
+};
+
+ViewMoverSlewHacked.prototype.get_currentPosition = function () {
+    var elapsed = SpaceTimeController.get_metaNow() - this._fromTime;
+    var elapsedSeconds = (elapsed) / 1000;
+    if (elapsedSeconds < this._upTargetTime) {
+        // Log interpolate from from to fromTop
+        return CameraParameters.interpolate(this._from, this._fromTop, elapsedSeconds / this._upTargetTime, 3, false);
+    } else if (elapsedSeconds < this._downTargetTime) {
+        elapsedSeconds -= this._upTargetTime;
+        if (Settings.get_active().get_galacticMode() && WWTControl.singleton.renderContext.space) {
+            return CameraParameters.interpolateGreatCircle(this._fromTop, this._toTop, elapsedSeconds / (this._downTargetTime - this._upTargetTime), 3, false);
+        }
+        // interpolate linear fromTop and toTop
+        return CameraParameters.interpolate(this._fromTop, this._toTop, elapsedSeconds / (this._downTargetTime - this._upTargetTime), 3, false);
+    } else {
+        if (!this._midpointFired) {
+            this._midpointFired = true;
+            if (this._midpoint != null) {
+                this._midpoint();
+            }
+        }
+        elapsedSeconds -= this._downTargetTime;
+        // Interpolate log from toTop and to
+        var alpha = elapsedSeconds / (this._toTargetTime - this._downTargetTime);
+        if (alpha > 1) {
+            alpha = 1;
+            this._complete = true;
+            return this._to.copy();
+        }
+        return CameraParameters.interpolate(this._toTop, this._to, alpha, 3, false);
+    }
+};
+
+ViewMoverSlewHacked.prototype.get_currentDateTime = function () {
+    SpaceTimeController.updateClock();
+    return SpaceTimeController.get_now();
+},
+
+ViewMoverSlewHacked.prototype.get_midpoint = function () {
+    return this._midpoint;
+};
+
+ViewMoverSlewHacked.prototype.set_midpoint = function (value) {
+    this._midpoint = value;
+    return value;
+};
+
+ViewMoverSlewHacked.prototype.get_moveTime = function () {
+    return this._toTargetTime;
+};
+
+export function gotoTargetFullHacked(control, noZoom, instant, cameraParams, studyImageSet, backgroundImageSet, duration) {
+    control._tracking = false;
+    control._trackingObject = null;
+    control._targetStudyImageset = studyImageSet;
+    control._targetBackgroundImageset = backgroundImageSet;
+    if (noZoom) {
+        cameraParams.zoom = control.renderContext.viewCamera.zoom;
+        cameraParams.angle = control.renderContext.viewCamera.angle;
+        cameraParams.rotation = control.renderContext.viewCamera.rotation;
+    } else {
+        if (cameraParams.zoom === -1 || !cameraParams.zoom) {
+            if (control.renderContext.space) {
+                cameraParams.zoom = 1.40625;
+            }
+            else {
+                cameraParams.zoom = 0.09;
+            }
+        }
+    }
+    if (instant || control._tooCloseForSlewMove(cameraParams)) {
+        control.set__mover(null);
+        control.renderContext.targetCamera = cameraParams.copy();
+        control.renderContext.viewCamera = control.renderContext.targetCamera.copy();
+        if (control.renderContext.space && Settings.get_active().get_galacticMode()) {
+            var gPoint = Coordinates.j2000toGalactic(control.renderContext.viewCamera.get_RA() * 15, control.renderContext.viewCamera.get_dec());
+            control.renderContext.targetAlt = control.renderContext.alt = gPoint[1];
+            control.renderContext.targetAz = control.renderContext.az = gPoint[0];
+        }
+        else if (control.renderContext.space && Settings.get_active().get_localHorizonMode()) {
+            var currentAltAz = Coordinates.equitorialToHorizon(Coordinates.fromRaDec(control.renderContext.viewCamera.get_RA(), control.renderContext.viewCamera.get_dec()), SpaceTimeController.get_location(), SpaceTimeController.get_now());
+            control.renderContext.targetAlt = control.renderContext.alt = currentAltAz.get_alt();
+            control.renderContext.targetAz = control.renderContext.az = currentAltAz.get_az();
+        }
+        control._mover_Midpoint();
+    } else {
+        // control.set__mover(ViewMoverSlewHacked.create(control.renderContext.viewCamera, cameraParams, duration));
+        duration = duration ?? 2 * 1000;
+        const start = new Date();
+        const end = new Date(start.getTime() + duration); 
+        control.set__mover(new ViewMoverKenBurnsStyle(control.renderContext.viewCamera, cameraParams, duration, start, end));
+        control.get__mover().set_midpoint(control._mover_Midpoint.bind(control));
+    }
+}

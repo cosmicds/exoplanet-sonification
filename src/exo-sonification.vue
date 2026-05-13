@@ -433,7 +433,7 @@ import { tween } from "femtotween";
 import { MiniDSBase, BackgroundImageset, skyBackgroundImagesets } from "@cosmicds/vue-toolkit";
 import { ImageSetLayer, Place } from "@wwtelescope/engine"; //Imageset
 import { applyImageSetLayerSetting } from "@wwtelescope/engine-helpers";
-import { drawSkyOverlays, initializeConstellationNames, drawSpreadSheetLayer, layerManagerDraw, drawGalaxyImage, zoom, setConstellationFiguresTarget, notifyConstellationModeChange, prebuildFigures3D } from "./wwt-hacks"; //makeAltAzGridText
+import { drawSkyOverlays, initializeConstellationNames, drawSpreadSheetLayer, layerManagerDraw, drawGalaxyImage, zoom, setConstellationFiguresTarget, notifyConstellationModeChange, prebuildFigures3D, gotoTargetFullHacked } from "./wwt-hacks"; //makeAltAzGridText
 // === Galaxy3D === (procedural 3D Milky Way, see src/galaxy3d.ts)
 import { installGalaxy3D } from "./galaxy3d";
 // === ExoplanetCloud === custom WebGL renderer (step 1: dot pass).
@@ -2649,8 +2649,7 @@ export default defineComponent({
 
       const fg = rc.get_foregroundImageset();
       const bg = rc.get_backgroundImageset();
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (WWTControl.singleton as any).gotoTargetFull(false, false, params, fg, bg, undefined);
+      gotoTargetFullHacked(this.wwtControl, false, false, params, fg, bg, 3);
     },
 
     clearSearch() {
