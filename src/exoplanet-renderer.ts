@@ -172,9 +172,13 @@ void main() {
   float bitVal = mod(floor(uCatMask / pow(2.0, aCatBit)), 2.0);
   // Visible iff bit is set AND start <= now <= end.
   float visible = bitVal * step(aStartDays, uNowDays) * step(uNowDays, aEndDays);
-  gl_Position = uPMatrix * uMVMatrix * vec4(aPos, 1.0);
   // gl_PointSize = 0 clips the point; the rasterizer never emits fragments.
   gl_PointSize = uPixelScale * visible;
+  if (gl_PointSize <= 0.0) {
+    gl_Position = vec4(2, 2, 2, 1);
+  } else {
+    gl_Position = uPMatrix * uMVMatrix * vec4(aPos, 1.0);
+  }
   vColor = aColor;
 }
 `;
@@ -776,9 +780,15 @@ export function drawExoplanetCloud(renderContext: any, opacity: number) {
   const DEFAULT_DOT_SIZE_2D = _IS_COARSE_POINTER ? 4 : 6;
   const DEFAULT_DOT_SIZE_3D = _IS_COARSE_POINTER ? 2 : 4;
   const sizeOverride = (w.__cloudDotSize as number | undefined);
-  const sizeForMode = is3D
+  let sizeForMode = is3D
     ? ((w.__cloudDotSize3D as number | undefined) ?? sizeOverride ?? DEFAULT_DOT_SIZE_3D)
     : ((w.__cloudDotSize2D as number | undefined) ?? sizeOverride ?? DEFAULT_DOT_SIZE_2D);
+
+  const sizeMin = sizeForMode;
+  const sizeMax = sizeForMode * 1.5;
+  const b = (sizeMax - sizeMin) / 10;
+  const a = sizeMax - b * 20;
+  sizeForMode = Math.round(a + b * Math.log(renderContext.viewCamera.zoom));
   const dpr = window.devicePixelRatio || 1;
   gl.uniform1f(_uPixelScale, sizeForMode * dpr);
   gl.uniform1f(_uOpacity, opacity);
