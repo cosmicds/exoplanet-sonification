@@ -5,28 +5,76 @@
 
 import {
   Color, Colors, Constellations, Coordinates, Grids,
-  LayerManager, LayerMap, PushPin, RenderContext, Settings, SimpleLineShader, SpaceTimeController,
-  SpreadSheetLayer, Text3d, Text3dBatch, URLHelpers,
+  LayerManager, LayerMap, Matrix3d, PushPin, RenderContext, Settings, SimpleLineShader, SpaceTimeController,
+  SpreadSheetLayer, Text3d, Text3dBatch, TextShader, URLHelpers,
   Vector3d, WWTControl
 } from "@wwtelescope/engine";
+
+import { drawExoplanetCloud, isExoplanetLayerName } from "./exoplanet-renderer";
 
 // ── Constellation figure fade ─────────────────────────────────────────────────
 // WWT's SimpleLineShader hardcodes alpha=1 for sky lines. We patch it once here
 // to re-set the alpha uniform whenever a constellation draw is in flight.
 const CONSTELLATION_FADE_MS = 400;
+// 3D figures look too bright at full opacity once they're projected onto real
+// star positions; dim them so they sit visually behind the exoplanet field.
+const CONSTELLATION_3D_OPACITY = 0.35;
 let _consFigAnimStart = 0;
 let _consFigAlphaFrom = 0;
 let _consFigAlphaTo = 0;
 let _consFigAlpha = 0;     // current animated value, read each frame in drawSkyOverlays
 let _inConsDraw = false;   // flag set only during constellationsFigures.draw()
+let _consUserTarget = 0;   // last user-requested target (0 or 1), before mode dimming
 
-export function setConstellationFiguresTarget(target: number) {
+function _modeDimFactor(): number {
+  const ctl = WWTControl.singleton;
+  const is3D = ctl && typeof ctl.get_solarSystemMode === 'function' && ctl.get_solarSystemMode();
+  return is3D ? CONSTELLATION_3D_OPACITY : 1.0;
+}
+
+function _retargetConsAlpha() {
   _consFigAnimStart = performance.now();
   _consFigAlphaFrom = _consFigAlpha;
-  _consFigAlphaTo = target;
+  _consFigAlphaTo = _consUserTarget * _modeDimFactor();
+}
+
+export function setConstellationFiguresTarget(target: number) {
+  _consUserTarget = target;
+  _retargetConsAlpha();
+}
+
+// Re-apply the current user target with the active mode's dim factor.
+// Call after a 2D↔3D switch so the displayed alpha smoothly retargets
+// (e.g. 1.0 → 0.7 going 2D→3D when constellations are on).
+export function notifyConstellationModeChange() {
+  _retargetConsAlpha();
 }
 
 Settings.get_globalSettings().set_constellationFigureColor('Color:255:100:180:255');
+
+// ── 2D figure pop-in fix ─────────────────────────────────────────────────────
+// Constellations.draw sets Constellations._maxSeperation =
+//   max(0.6, cos(fovAngle*2)), and _drawSingleConstellation early-returns when
+// dot(viewPoint, centroid) < _maxSeperation. The result: as the user pans,
+// new figures pop in at full _consFigAlpha instead of fading.
+//
+// Fix: neutralize _maxSeperation for the duration of each _drawSingleConstellation
+// call so the cull never fires. All 88 figures draw every frame; at 2D zoom
+// levels this is only a few thousand line segments — trivial GPU cost, and the
+// per-constellation line list is built lazily on first draw then cached on the
+// instance, so subsequent frames just rebind the existing vertex buffers.
+// Labels don't have a software cull (single Text3dBatch.draw) so this fix only
+// needs to touch the figure path.
+const _origDrawSingleConstellation = (Constellations as any).prototype._drawSingleConstellation;
+(Constellations as any).prototype._drawSingleConstellation = function (renderContext, ls, opacity) {
+  const saved = (Constellations as any)._maxSeperation;
+  (Constellations as any)._maxSeperation = -2; // dot ∈ [-1, 1] is always ≥ -2
+  try {
+    _origDrawSingleConstellation.call(this, renderContext, ls, opacity);
+  } finally {
+    (Constellations as any)._maxSeperation = saved;
+  }
+};
 
 const _origSimpleLineShaderUse = SimpleLineShader.use;
 SimpleLineShader.use = function (renderContext, vertex, lineColor, useDepth) {
@@ -38,6 +86,91 @@ SimpleLineShader.use = function (renderContext, vertex, lineColor, useDepth) {
       _consFigAlpha
     );
   }
+};
+
+// WWT's TextShader fragment shader is `gl_FragColor = texture2D(...)` with no
+// opacity uniform, so the `opacity` arg to Text3dBatch.draw is ignored on the
+// WebGL path. Constellation label fade therefore doesn't work out of the box.
+// We compile a parallel program with a uOpacity uniform and bind it in place
+// of WWT's program only while _inConsDraw is true (i.e. only for the names
+// batch). All other Text3dBatch callers (grid labels, planet text, …) are
+// unaffected.
+let _consTextProg: WebGLProgram | null = null;
+let _consTextProgLocs: {
+  vert: number; tex: number;
+  mv: WebGLUniformLocation | null; proj: WebGLUniformLocation | null;
+  samp: WebGLUniformLocation | null; opacity: WebGLUniformLocation | null;
+} | null = null;
+
+function _ensureConsTextProg(gl: WebGLRenderingContext) {
+  if (_consTextProg) return;
+  const vertSrc =
+    'attribute vec3 aVertexPosition;\n' +
+    'attribute vec2 aTextureCoord;\n' +
+    'uniform mat4 uMVMatrix;\n' +
+    'uniform mat4 uPMatrix;\n' +
+    'varying vec2 vTextureCoord;\n' +
+    'void main(void) {\n' +
+    '  gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);\n' +
+    '  vTextureCoord = aTextureCoord;\n' +
+    '}\n';
+  const fragSrc =
+    'precision mediump float;\n' +
+    'varying vec2 vTextureCoord;\n' +
+    'uniform sampler2D uSampler;\n' +
+    'uniform float uOpacity;\n' +
+    'void main(void) {\n' +
+    '  vec4 c = texture2D(uSampler, vTextureCoord);\n' +
+    '  gl_FragColor = vec4(c.rgb, c.a * uOpacity);\n' +
+    '}\n';
+  const vs = gl.createShader(gl.VERTEX_SHADER)!;
+  gl.shaderSource(vs, vertSrc); gl.compileShader(vs);
+  const fs = gl.createShader(gl.FRAGMENT_SHADER)!;
+  gl.shaderSource(fs, fragSrc); gl.compileShader(fs);
+  const prog = gl.createProgram()!;
+  gl.attachShader(prog, vs); gl.attachShader(prog, fs); gl.linkProgram(prog);
+  _consTextProg = prog;
+  _consTextProgLocs = {
+    vert: gl.getAttribLocation(prog, 'aVertexPosition'),
+    tex: gl.getAttribLocation(prog, 'aTextureCoord'),
+    mv: gl.getUniformLocation(prog, 'uMVMatrix'),
+    proj: gl.getUniformLocation(prog, 'uPMatrix'),
+    samp: gl.getUniformLocation(prog, 'uSampler'),
+    opacity: gl.getUniformLocation(prog, 'uOpacity'),
+  };
+}
+
+const _origTextShaderUse = TextShader.use;
+TextShader.use = function (renderContext, vertex, texture) {
+  if (!_inConsDraw || !renderContext.gl) {
+    return _origTextShaderUse.call(this, renderContext, vertex, texture);
+  }
+  const gl = renderContext.gl as WebGLRenderingContext;
+  _ensureConsTextProg(gl);
+  const locs = _consTextProgLocs!;
+  gl.useProgram(_consTextProg);
+  // Matrix3d is exposed globally by the WWT engine at runtime (see CLAUDE.md
+  // note on the layerManagerDraw implicit-Matrix3d caveat).
+  const mvMat = Matrix3d.multiplyMatrix(renderContext.get_world(), renderContext.get_view());
+  gl.uniformMatrix4fv(locs.mv, false, mvMat.floatArray());
+  gl.uniformMatrix4fv(locs.proj, false, renderContext.get_projection().floatArray());
+  gl.uniform1i(locs.samp, 0);
+  gl.uniform1f(locs.opacity, _consFigAlpha);
+  if (renderContext.space) gl.disable(gl.DEPTH_TEST);
+  else gl.enable(gl.DEPTH_TEST);
+  gl.disableVertexAttribArray(0);
+  gl.disableVertexAttribArray(1);
+  gl.disableVertexAttribArray(2);
+  gl.disableVertexAttribArray(3);
+  gl.bindBuffer(gl.ARRAY_BUFFER, vertex);
+  gl.enableVertexAttribArray(locs.vert);
+  gl.enableVertexAttribArray(locs.tex);
+  gl.vertexAttribPointer(locs.vert, 3, gl.FLOAT, false, 20, 0);
+  gl.vertexAttribPointer(locs.tex, 2, gl.FLOAT, false, 20, 12);
+  gl.activeTexture(gl.TEXTURE0);
+  gl.bindTexture(gl.TEXTURE_2D, texture);
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 };
 
 // ── Tile sharpness ────────────────────────────────────────────────────────────
@@ -157,18 +290,37 @@ export function zoom(factor: number) {
 }
 
 export function drawSkyOverlays() {
-  // Advance the constellation fade animation each frame.
+  // Advance the fade animation FIRST so 3D drawing (which happens later in the
+  // frame, from the patched Grids.drawStars3D) sees the up-to-date alpha.
   const t = Math.min(1, (performance.now() - _consFigAnimStart) / CONSTELLATION_FADE_MS);
   _consFigAlpha = _consFigAlphaFrom + (_consFigAlphaTo - _consFigAlphaFrom) * t;
 
+  // In solar-system (3D) mode the 2D sky-sphere overlays are wrong: this
+  // function runs under the 100000× sky-sphere matrix and would re-project
+  // figures back onto a sphere. Real 3D figures are drawn from the
+  // Grids.drawStars3D hook below, where the world matrix is set for absolute
+  // AU positions. Labels are skipped in 3D entirely (per design).
+  const ctl = WWTControl.singleton;
+  if (ctl && typeof ctl.get_solarSystemMode === 'function' && ctl.get_solarSystemMode()) {
+    return;
+  }
+
   if (_consFigAlpha > 0) {
-    Constellations.drawConstellationNames(this.renderContext, _consFigAlpha, Colors.get_yellow());
-    if (WWTControl.constellationsFigures == null) {
-      WWTControl.constellationsFigures = Constellations.create('Constellations', URLHelpers.singleton.engineAssetUrl('figures.txt'), false, false, false);
-    }
+    // Wrap the names + figures draws with _inConsDraw so the patched
+    // TextShader.use binds the opacity-aware program for label fade and the
+    // patched SimpleLineShader.use applies _consFigAlpha to figure lines.
+    // try/finally ensures the flag is cleared even if a draw throws — a stuck
+    // `true` would silently fade unrelated text/lines in subsequent frames.
     _inConsDraw = true;
-    WWTControl.constellationsFigures.draw(this.renderContext, false, 'UMA', false);
-    _inConsDraw = false;
+    try {
+      Constellations.drawConstellationNames(this.renderContext, _consFigAlpha, Colors.get_yellow());
+      if (WWTControl.constellationsFigures == null) {
+        WWTControl.constellationsFigures = Constellations.create('Constellations', URLHelpers.singleton.engineAssetUrl('figures.txt'), false, false, false);
+      }
+      WWTControl.constellationsFigures.draw(this.renderContext, false, 'UMA', false);
+    } finally {
+      _inConsDraw = false;
+    }
   }
   if (Settings.get_active().get_showAltAzGrid()) {
     const altAzColor = Color.fromArgb(1, 3, 92, 134);
@@ -218,6 +370,17 @@ export function makeAltAzGridText() {
 }
 
 export function drawSpreadSheetLayer(renderContext, opacity, flat) {
+  // The custom exoplanet renderer is authoritative for the exoplanet
+  // category layers: short-circuit WWT's spreadsheet draw for them so we
+  // don't double-render (the renderer owns the dot pass for those layers
+  // and handles its own category/time filtering). Non-exoplanet spreadsheet
+  // layers (e.g. pulsar background) fall through to the original path.
+  // Opt-out for debugging: set `window.__cloudAuthoritative = false`.
+  if (typeof window !== 'undefined'
+      && (window as any).__cloudAuthoritative !== false
+      && isExoplanetLayerName(this.get_name && this.get_name())) {
+    return true;
+  }
   var device = renderContext;
   if (this.version !== this.lastVersion) {
     this.cleanUp();
@@ -399,10 +562,205 @@ export function layerManagerDraw(renderContext, opacity, astronomical, reference
   renderContext.set_world(matOld);
   renderContext.set_worldBaseNonRotating(matOldNonRotating);
 
+  // Custom exoplanet-cloud renderer (step 1: dot pass only). Gated on
+  // window.__cloudDots inside drawExoplanetCloud so the call is cheap when
+  // disabled, and we don't run it in non-Sky reference frames. World matrix
+  // has already been restored above, so we render in absolute-AU coords —
+  // which is what ALL_POINTS_3D pre-computes (rotateX(ecliptic) baked in).
+  if (referenceFrame === 'Sky') {
+    drawExoplanetCloud(renderContext, opacity);
+  }
+
   // WWT only calls _drawSkyOverlays() in 2D mode when showSolarSystem is true,
   // but this app disables that. Invoke it here whenever LayerManager draws the
   // Sky frame — nested is always true in WWT's call, so !nested would never fire.
   if (referenceFrame === 'Sky') {
     WWTControl.singleton._drawSkyOverlays();
+
+    // 3D constellation figures: this LayerManager Sky-frame call fires in 3D
+    // mode under the absolute-AU world matrix (same one used to render the
+    // exoplanet layers), which is exactly what drawFigures3D needs. Hooking
+    // here also avoids the Grids.drawStars3D gate — this app sets
+    // solarSystemStars=false, so that hook would never fire.
+    const ctl = WWTControl.singleton;
+    const is3D = ctl && typeof ctl.get_solarSystemMode === 'function' && ctl.get_solarSystemMode();
+    if (is3D && _consFigAlpha > 0) {
+      _inConsDraw = true;
+      try { drawFigures3D(renderContext); }
+      finally { _inConsDraw = false; }
+    }
   }
 };
+
+// ── 3D constellation figures ────────────────────────────────────────────────
+// In solar-system (3D) mode, draw constellation figures by connecting the
+// actual 3D positions of their member stars (from WWT's bundled Hipparcos
+// catalog), instead of projecting endpoints onto the sky sphere. Most figures
+// "shatter" visibly when seen from outside Earth because their constituent
+// stars are at wildly different distances — Orion's belt spans ~700–2000 ly,
+// while the Big Dipper's stars range from ~25 to ~125 pc.
+//
+// Match strategy: figures.txt endpoints carry only RA/Dec (sparse star names
+// are free-text and unreliable), so each endpoint is matched to its nearest
+// naked-eye Hipparcos star by angular separation within a tolerance. Falls
+// back to a fixed-distance sphere projection if no candidate is close enough.
+//
+// Render hook: we patch Grids.drawStars3D rather than _drawSkyOverlays because
+// _drawSkyOverlays runs under a 100000× sky-sphere world matrix, which would
+// collapse our absolute-AU line endpoints back to a sphere. drawStars3D runs
+// later in _drawSolarSystem with the world matrix set for real 3D positions —
+// the same one that places the Hipparcos sprites we're connecting.
+
+const FIG3D_MATCH_TOLERANCE_DEG = 2.5;
+const FIG3D_MATCH_BRIGHT_MAG = 6.5;     // naked-eye limit for candidate stars
+const FIG3D_FALLBACK_DIST_PC = 150;     // sphere radius for unmatched endpoints
+const FIG3D_AU_PER_PC = 206264.806;
+
+let _figures3dBuffer: WebGLBuffer | null = null;
+let _figures3dVertexCount = 0;
+let _figures3dBuilt = false;
+let _figures3dLogged = false;
+
+function _ensure3DConstellationsFigures(): boolean {
+  if (WWTControl.constellationsFigures == null) {
+    WWTControl.constellationsFigures = Constellations.create(
+      'Constellations',
+      URLHelpers.singleton.engineAssetUrl('figures.txt'),
+      false, false, false
+    );
+  }
+  return WWTControl.constellationsFigures.lines != null;
+}
+
+function _starsReadyForFigures3D(renderContext): boolean {
+  if (Grids._stars == null) {
+    // Triggers async getStarFile + downstream initStarVertexBuffer
+    Grids.initStarVertexBuffer(renderContext);
+    return false;
+  }
+  if (Grids._stars.length === 0) return false;
+  // star.position is populated by initStarVertexBuffer once _starSprites builds.
+  if (Grids._starSprites == null) {
+    Grids.initStarVertexBuffer(renderContext);
+  }
+  return Grids._stars[0].position != null;
+}
+
+function _buildFigures3D(renderContext) {
+  const lines = WWTControl.constellationsFigures.lines;
+
+  // Candidate stars: bright and already 3D-positioned.
+  const stars: any[] = [];
+  for (const s of Grids._stars) {
+    if (s.magnitude < FIG3D_MATCH_BRIGHT_MAG && s.position != null) {
+      stars.push(s);
+    }
+  }
+
+  // Pre-compute unit direction vectors for candidates. Any consistent
+  // convention works for the angular-separation dot product — use raw ICRS
+  // here; star.position (in the swapped/ecliptic-rotated frame) is used only
+  // for emitting line geometry.
+  const n = stars.length;
+  const sUx = new Float64Array(n);
+  const sUy = new Float64Array(n);
+  const sUz = new Float64Array(n);
+  for (let i = 0; i < n; i++) {
+    const s = stars[i];
+    const a = s.RA * Math.PI / 12;
+    const d = s.dec * Math.PI / 180;
+    const cd = Math.cos(d);
+    sUx[i] = Math.cos(a) * cd;
+    sUy[i] = Math.sin(a) * cd;
+    sUz[i] = Math.sin(d);
+  }
+  const minDot = Math.cos(FIG3D_MATCH_TOLERANCE_DEG * Math.PI / 180);
+  const ecliptic = Coordinates.meanObliquityOfEcliptic(SpaceTimeController.get_jNow()) / 180 * Math.PI;
+  const fallbackDistAU = FIG3D_FALLBACK_DIST_PC * FIG3D_AU_PER_PC;
+
+  const verts: number[] = [];
+  let totalEndpoints = 0, matched = 0;
+  for (const lineset of lines) {
+    let prevPos: any = null;
+    for (const lp of lineset.points) {
+      totalEndpoints++;
+      const a = lp.RA * Math.PI / 12;
+      const d = lp.dec * Math.PI / 180;
+      const cd = Math.cos(d);
+      const ux = Math.cos(a) * cd;
+      const uy = Math.sin(a) * cd;
+      const uz = Math.sin(d);
+
+      let bestDot = -1, bestIdx = -1;
+      for (let i = 0; i < n; i++) {
+        const dot = ux * sUx[i] + uy * sUy[i] + uz * sUz[i];
+        if (dot > bestDot) { bestDot = dot; bestIdx = i; }
+      }
+
+      let pos;
+      if (bestDot >= minDot && bestIdx >= 0) {
+        pos = stars[bestIdx].position;
+        matched++;
+      } else {
+        // Same transform pipeline as star.position so frames match.
+        pos = Coordinates.raDecTo3dAu(lp.RA, lp.dec, fallbackDistAU);
+        pos.rotateX(ecliptic);
+      }
+
+      // Linepoint.pointType: 3=start, 0=move, 1=line, 2=dash. Emit a segment
+      // for 1/2 only; 0/3 just advance the cursor.
+      if (prevPos && (lp.pointType === 1 || lp.pointType === 2)) {
+        verts.push(prevPos.x, prevPos.y, prevPos.z, pos.x, pos.y, pos.z);
+      }
+      prevPos = pos;
+    }
+  }
+
+  if (!_figures3dLogged) {
+    console.log(`[constellations3d] matched ${matched}/${totalEndpoints} endpoints to Hipparcos stars (tol ${FIG3D_MATCH_TOLERANCE_DEG}°, mag<${FIG3D_MATCH_BRIGHT_MAG}, ${n} candidates)`);
+    _figures3dLogged = true;
+  }
+
+  const gl = renderContext.gl;
+  _figures3dBuffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, _figures3dBuffer);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(verts), gl.STATIC_DRAW);
+  _figures3dVertexCount = verts.length / 3;
+  _figures3dBuilt = true;
+}
+
+// Eagerly drive the figures.txt + Hipparcos loads and build the 3D vertex
+// buffer as soon as both are ready, without drawing anything. Calling this
+// repeatedly (e.g. on a poll) until it returns true means the data is already
+// in GPU memory by the time the user first toggles constellations on, so the
+// fade-in animation is smooth from frame 1 instead of snapping to the current
+// alpha when the async loads finally finish mid-fade. Safe to call in either
+// 2D or 3D mode — only needs a live renderContext.gl.
+export function prebuildFigures3D(renderContext): boolean {
+  if (_figures3dBuilt) return true;
+  if (!renderContext || !renderContext.gl) return false;
+  if (!_ensure3DConstellationsFigures()) return false;
+  if (!_starsReadyForFigures3D(renderContext)) return false;
+  _buildFigures3D(renderContext);
+  return _figures3dBuilt;
+}
+
+function drawFigures3D(renderContext) {
+  if (!renderContext.gl) return;
+  if (!_figures3dBuilt) {
+    if (!_ensure3DConstellationsFigures()) return;
+    if (!_starsReadyForFigures3D(renderContext)) return;
+    _buildFigures3D(renderContext);
+  }
+  if (_figures3dVertexCount === 0) return;
+
+  // Caller must set _inConsDraw=true so SimpleLineShader.use applies _consFigAlpha.
+  const lineColor = Color.load(Settings.get_globalSettings().get_constellationFigureColor());
+  SimpleLineShader.use(renderContext, _figures3dBuffer, lineColor, false);
+  renderContext.gl.drawArrays(renderContext.gl.LINES, 0, _figures3dVertexCount);
+}
+
+// Note: drawFigures3D is invoked from layerManagerDraw above (Sky-frame branch
+// in 3D mode), not via a Grids.drawStars3D wrapper — this app disables
+// `solarSystemStars`, so the engine never calls drawStars3D and any wrapper
+// there would be dead code.
