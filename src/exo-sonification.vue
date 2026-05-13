@@ -2356,8 +2356,8 @@ export default defineComponent({
     /* Toggles the hamburger menu when the hamburger icon is clicked */
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
-      this.showCatalog = false; //!this.showCatalog;
-      this.showCatalogButton = !this.showCatalogButton;
+      // this.showCatalog = false; //!this.showCatalog;
+      // this.showCatalogButton = !this.showCatalogButton;
       if (this.isMenuOpen && this.showSearch) {
         this.showSearch = false;
         this.clearSearch();
