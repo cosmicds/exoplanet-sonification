@@ -219,7 +219,7 @@
       </transition>
 
     <!-- Search overlay -->
-    <div v-if="showSearch" class="search-overlay">
+    <div v-if="showSearch" class="search-overlay" @keydown.stop>
       <input
         ref="searchInput"
         class="search-input"
