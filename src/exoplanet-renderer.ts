@@ -789,6 +789,7 @@ export function drawExoplanetCloud(renderContext: any, opacity: number) {
   const b = (sizeMax - sizeMin) / 10;
   const a = sizeMax - b * 20;
   sizeForMode = Math.round(a + b * Math.log(renderContext.viewCamera.zoom));
+
   const dpr = window.devicePixelRatio || 1;
   gl.uniform1f(_uPixelScale, sizeForMode * dpr);
   gl.uniform1f(_uOpacity, opacity);
