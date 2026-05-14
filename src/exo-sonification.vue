@@ -1916,18 +1916,6 @@ export default defineComponent({
     },
 
     spawnPing(raDeg: number, decDeg: number, color: string) {
-      // Reject points on the opposite hemisphere from the camera.
-      // transformWorldPointToPickSpace divides by vz without checking its sign,
-      // so antipodal points (vz < 0) get mirror-projected through screen center
-      // and pass the naive bounds check below. Dot product <= 0 means >= 90° away.
-      const camRA = this.wwtRARad;
-      const camDec = this.wwtDecRad;
-      const ptRA = raDeg * D2R;
-      const ptDec = decDeg * D2R;
-      const dot = Math.sin(camDec) * Math.sin(ptDec) +
-                  Math.cos(camDec) * Math.cos(ptDec) * Math.cos(ptRA - camRA);
-      if (dot <= 0) return;
-
       const screen = this.findScreenPointForRADec({ ra: raDeg, dec: decDeg });
       if (screen.x < -50 || screen.x > window.innerWidth + 50 ||
           screen.y < -50 || screen.y > window.innerHeight + 50) return;
@@ -1948,11 +1936,11 @@ export default defineComponent({
     //     pos.rotateX(ecliptic)                   // tilt by ε
     // and that pos is what gets drawn at world coordinates (xR, yR, zR).
     spawnPing3D(raDeg: number, decDeg: number, distPc: number, color: string) {
-      const ptRA = raDeg * D2R;
-      const ptDec = decDeg * D2R;
-      const dot = Math.sin(this.wwtDecRad) * Math.sin(ptDec) +
-                  Math.cos(this.wwtDecRad) * Math.cos(ptDec) * Math.cos(ptRA - this.wwtRARad);
-      if (dot <= 0) return;
+      // const ptRA = raDeg * D2R;
+      // const ptDec = decDeg * D2R;
+      // const dot = Math.sin(this.wwtDecRad) * Math.sin(ptDec) +
+      //             Math.cos(this.wwtDecRad) * Math.cos(ptDec) * Math.cos(ptRA - this.wwtRARad);
+      // if (dot <= 0) return;
 
       // Parsec → AU. Match the engine's altUnit=parsecs path so the world
       // vertex lands at the same distance the dot is drawn at.
@@ -2113,24 +2101,11 @@ export default defineComponent({
     // pointer. 3D-distance (gdist) deliberately does not factor into the
     // ranking — a far Kepler-field dot and a close hot-Jupiter dot are
     // equally hittable.
-    //
-    // Anti-mirror guard: transformWorldPointToPickSpace divides by depth
-    // without checking sign, so a point behind the camera can mirror-project
-    // near the cursor. We use a *relaxed* hemisphere cull (cos sep > -0.35,
-    // ~110° tolerance) plus a screen-bounds sanity check. The strict
-    // dot > 0 cull was rejecting legit far points whose camera-frame
-    // direction differs from the origin-frame approximation due to the
-    // camera being translated in solar-system mode.
     _closestInView3D(
       point: { x: number, y: number },
       threshold?: number
     ): PointData | null {
-      const layersOn = this.layersOn;
       const currentMs = this.getSliderDate().getTime();
-      const camRA = this.wwtRARad;
-      const camDec = this.wwtDecRad;
-      const sinCamDec = Math.sin(camDec);
-      const cosCamDec = Math.cos(camDec);
       const ctl = WWTControl.singleton;
       const px = point.x;
       const py = point.y;
@@ -2143,21 +2118,6 @@ export default defineComponent({
       const sxMax = 2 * winW;
       const syMin = -winH;
       const syMax = 2 * winH;
-      // Adaptive angular pre-filter: skip points well outside the camera's
-      // view cone before paying for the matrix-multiply projection. We use
-      // the current vertical FOV widened by the window aspect (for horizontal
-      // FOV) and an extra margin, capped at "all sky" so we never over-cull.
-      // This is the big win when zoomed in — a 3° FOV culls >99% of points
-      // before they hit getScreenPointForCoordinates.
-      const fovDeg = (this.wwtRenderContext.get_fovAngle?.() ?? 60);
-      const aspect = winH > 0 ? Math.max(1, winW / winH) : 1;
-      const halfConeRad = Math.min(Math.PI, (fovDeg * aspect * 0.5 + 15) * D2R);
-      // Use the tighter of (cos halfCone) and the safety floor −0.35 ≈ 110°.
-      // Small FOV → cos halfCone is close to 1 → aggressive cull. Wide FOV
-      // → cos halfCone drops toward −1 but we cap at −0.35 so the origin-
-      // vs-camera direction approximation can't accidentally drop a legit
-      // far point when the camera is translated in solar-system mode.
-      const cullCos = Math.max(-0.35, Math.cos(halfConeRad));
       const thresh = threshold ?? 12;
       const threshSq = thresh * thresh;
       let minDistSq = Infinity;
@@ -2167,19 +2127,21 @@ export default defineComponent({
 
       for (let i = 0; i < ALL_POINTS_3D.length; i++) {
         const r = ALL_POINTS_3D[i];
-        if (!layersOn[r.layerKey]) continue;
+        if (!this.layersOn[r.layerKey]) continue;
         if (r.discPubdate.getTime() > currentMs) continue;
 
-        const cosSep = sinCamDec * r.sinDec +
-                       cosCamDec * r.cosDec * Math.cos(r.ra - camRA);
-        if (cosSep < cullCos) continue;
-
         const sp = ctl.getScreenPointForCoordinates(r.xR, r.yR, r.zR);
+
         if (!sp) continue;
         const sx = sp.x;
         const sy = sp.y;
         if (!isFinite(sx) || !isFinite(sy)) continue;
         if (sx < sxMin || sx > sxMax || sy < syMin || sy > syMax) continue;
+
+        // Should be the same for any coordinate, so just pick one
+        const [near, ray] = ctl.getRayForScreenPoint(sp.x, sp.y);
+        const t = (r.xR - near.x) / ray.x;
+        if (t < 0) continue;
 
         const dx = sx - px;
         const dy = sy - py;
@@ -2326,6 +2288,7 @@ export default defineComponent({
                 this.playPointTone?.(closestPt.plOrbper);
               }
               const color = colorForCat(closestPt.cat);
+              console.log(color);
               if (this.modeReactive === '2D') {
                 this.spawnPing(closestPt.ra * R2D, closestPt.dec * R2D, color);
               } else {
