@@ -7,7 +7,7 @@ import {
   CameraParameters, Color, Colors, Constellations, Coordinates, Grids,
   LayerManager, LayerMap, Matrix3d, PushPin, RenderContext, Settings, SimpleLineShader, SpaceTimeController,
   SpreadSheetLayer, Text3d, Text3dBatch, TextShader, URLHelpers,
-  Vector3d, ViewMoverKenBurnsStyle, WWTControl
+  Vector3d, WWTControl
 } from "@wwtelescope/engine";
 
 import { drawExoplanetCloud, isExoplanetLayerName } from "./exoplanet-renderer";
@@ -896,6 +896,107 @@ ViewMoverSlewHacked.prototype.get_moveTime = function () {
     return this._toTargetTime;
 };
 
+// ── ViewMoverCinematic ────────────────────────────────────────────────────────
+// Duck-typed IViewMover replacement for ViewMoverKenBurnsStyle. WWT's engine
+// only ever calls get_complete / get_currentPosition / get_currentDateTime /
+// get_midpoint / set_midpoint on a mover (see _updateMover at engine index.js
+// line 67279), so we can be a plain class with those methods.
+//
+// Differences vs the engine's ViewMoverKenBurnsStyle:
+//   • `from`/`to` are .copy()'d so the wraparound mutation can't corrupt the
+//     live viewCamera (the stock class mutates `from` in-place).
+//   • The raw elapsed/total alpha is passed through smootherstep before the
+//     CameraParameters.interpolate call. We then pass linear (type=0) to the
+//     interpolator so the easing comes entirely from our curve.
+class ViewMoverCinematic {
+  constructor(from, to, timeSec, fromDateTime, toDateTime) {
+    const fromC = from.copy();
+    const toC = to.copy();
+    if (Math.abs(fromC.lng - toC.lng) > 180) {
+      if (fromC.lng > toC.lng) fromC.lng -= 360;
+      else fromC.lng += 360;
+    }
+    this._from = fromC;
+    this._to = toC;
+    this._toTargetTime = timeSec;
+    this._fromDateTime = fromDateTime;
+    this._toDateTime = toDateTime;
+    this._dateTimeSpan = toDateTime.getTime() - fromDateTime.getTime();
+    this._fromTime = SpaceTimeController.get_metaNow();
+    this._complete = false;
+    this._midpointFired = false;
+    this._midpoint = null;
+    // CameraParameters.interpolate blends lat/lng linearly but blends zoom in
+    // log space against the same alpha, so a deep zoom-in makes the angular
+    // motion accelerate as FOV narrows — "space rushing past". For large zoom
+    // deltas we run a phased schedule (pan first at the original FOV, then
+    // dolly in). Threshold of 0.5 ≈ factor of √2 in zoom — below that a
+    // simultaneous slew doesn't really rush.
+    this._zoomLogDelta = Math.abs(Math.log2(this._to.zoom / this._from.zoom));
+    this._phased = this._zoomLogDelta > 0.5;
+  }
+
+  _ease(t) {
+    if (t <= 0) return 0;
+    if (t >= 1) return 1;
+    return t * t * t * (t * (t * 6 - 15) + 10);
+  }
+
+  // Replicates CameraParameters.interpolate (linear+log path, ignoring the
+  // great-circle and fastDirectionMove branches we don't use here) but with
+  // separate alphas for position and zoom.
+  _blend(aPos, aZoom) {
+    const f = this._from;
+    const to = this._to;
+    const r = new CameraParameters();
+    r.angle = to.angle * aPos + f.angle * (1 - aPos);
+    r.rotation = to.rotation * aPos + f.rotation * (1 - aPos);
+    r.lat = to.lat * aPos + f.lat * (1 - aPos);
+    r.lng = to.lng * aPos + f.lng * (1 - aPos);
+    r.zoom = Math.pow(2, Math.log2(to.zoom) * aZoom + Math.log2(f.zoom) * (1 - aZoom));
+    r.opacity = to.opacity * aPos + f.opacity * (1 - aPos);
+    r.viewTarget = Vector3d.lerp(f.viewTarget, to.viewTarget, aPos);
+    r.targetReferenceFrame = to.targetReferenceFrame;
+    r.target = (to.target === f.target) ? to.target : 20;
+    return r;
+  }
+
+  get_complete() { return this._complete; }
+
+  get_currentPosition() {
+    const elapsedSeconds = (SpaceTimeController.get_metaNow() - this._fromTime) / 1000;
+    const t = elapsedSeconds / this._toTargetTime;
+    if (!this._midpointFired && t >= 0.5) {
+      this._midpointFired = true;
+      if (this._midpoint != null) this._midpoint();
+    }
+    if (t >= 1) {
+      this._complete = true;
+      return this._to.copy();
+    }
+    if (!this._phased) {
+      return CameraParameters.interpolate(this._from, this._to, this._ease(t), 0, false);
+    }
+    // Phased: pan completes by t=0.65, zoom runs from t=0.40 to t=1.00.
+    // The 25% overlap (t ∈ [0.40, 0.65]) keeps motion continuous so there's
+    // no visible pause when pan finishes — zoom-in is already in progress.
+    const aPos = this._ease(Math.min(1, t / 0.65));
+    const aZoom = this._ease(Math.max(0, (t - 0.40) / 0.60));
+    return this._blend(aPos, aZoom);
+  }
+
+  get_currentDateTime() {
+    const elapsedSeconds = (SpaceTimeController.get_metaNow() - this._fromTime) / 1000;
+    const alpha = Math.min(1, elapsedSeconds / this._toTargetTime);
+    const delta = this._dateTimeSpan * alpha;
+    return new Date(this._fromDateTime.getTime() + delta);
+  }
+
+  get_midpoint() { return this._midpoint; }
+  set_midpoint(v) { this._midpoint = v; return v; }
+  get_moveTime() { return this._toTargetTime; }
+}
+
 export function gotoTargetFullHacked(control, noZoom, instant, cameraParams, studyImageSet, backgroundImageSet, duration) {
     control._tracking = false;
     control._trackingObject = null;
@@ -931,14 +1032,55 @@ export function gotoTargetFullHacked(control, noZoom, instant, cameraParams, stu
         }
         control._mover_Midpoint();
     } else {
-        // Hacked slew-style
-        // control.set__mover(ViewMoverSlewHacked.create(control.renderContext.viewCamera, cameraParams, duration));
-      
-        // Ken Burns-style
-        duration = (duration ?? 2) * 1000;
+        // Cinematic Ken-Burns: same timing contract as ViewMoverKenBurnsStyle
+        // (time is SECONDS, fromDateTime/toDateTime in ms), but alpha is run
+        // through smootherstep (6t^5 - 15t^4 + 10t^3) before being handed to
+        // CameraParameters.interpolate. Smootherstep has zero 1st AND 2nd
+        // derivatives at both endpoints, so the camera eases in and out more
+        // gently than the engine's sinh-based easeInOut.
+        const durationSec = duration ?? 2;
+        const durationMs = durationSec * 1000;
         const start = new Date();
-        const end = new Date(start.getTime() + duration); 
-        control.set__mover(new ViewMoverKenBurnsStyle(control.renderContext.viewCamera, cameraParams, duration, start, end));
+        const end = new Date(start.getTime() + durationMs);
+        control.set__mover(new ViewMoverCinematic(control.renderContext.viewCamera, cameraParams, durationSec, start, end));
         control.get__mover().set_midpoint(control._mover_Midpoint.bind(control));
     }
+}
+
+// ── gotoRADecZoomCinematic ────────────────────────────────────────────────────
+// 2D search-slew helper. Mirrors the engine's WWTControl.gotoRADecZoom (see
+// index.js:68345) but routes through gotoTargetFullHacked so the slew uses
+// ViewMoverCinematic instead of ViewMoverSlew. To revert to the stock 2D
+// slew, just delete this export and its call site in selectSearchResult.
+//
+//   raHours    target RA in hours
+//   decDeg     target Dec in degrees
+//   zoomDeg    target zoom in degrees (clamped to [zoomMin, zoomMax])
+//   duration   optional seconds; if omitted, scales 1.5–4 s with angular
+//              separation (~0.6 + 0.05·angSepDeg, clamped) so nearby targets
+//              feel snappy and across-sky slews stay cinematic.
+export function gotoRADecZoomCinematic(control, raHours, decDeg, zoomDeg, duration?: number) {
+  let ra = raHours;
+  while (ra > 24) ra -= 24;
+  while (ra < 0) ra += 24;
+  const dec = Math.max(-90, Math.min(90, decDeg));
+  const zoom = Math.max(control.get_zoomMin(), Math.min(control.get_zoomMax(), zoomDeg));
+
+  const rc = control.renderContext;
+  const cam = rc.viewCamera;
+  const params = CameraParameters.create(dec, rc.rAtoViewLng(ra), zoom, cam.rotation, cam.angle, cam.opacity);
+
+  let dur = duration;
+  if (dur === undefined) {
+    const D = Math.PI / 180;
+    const ra1 = cam.get_RA() * 15 * D;
+    const ra2 = ra * 15 * D;
+    const d1 = cam.get_dec() * D;
+    const d2 = dec * D;
+    const cosSep = Math.sin(d1) * Math.sin(d2) + Math.cos(d1) * Math.cos(d2) * Math.cos(ra1 - ra2);
+    const angDeg = Math.acos(Math.max(-1, Math.min(1, cosSep))) / D;
+    dur = Math.max(1.5, Math.min(4.0, 0.6 + 0.05 * angDeg));
+  }
+
+  gotoTargetFullHacked(control, false, false, params, rc.get_foregroundImageset(), rc.get_backgroundImageset(), dur);
 }
