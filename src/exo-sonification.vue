@@ -198,7 +198,7 @@
               </p>
 
               <p>
-                David would like to dedicate this exoplanet sonification explorer to celebrate the memory of Mac Motes &mdash; his kindness was apparent to everyone who crossed paths with him and he would've enjoyed this interactive more than anyone.
+                David dedicates this exoplanet sonification explorer to celebrate the memory of Mac Motes &mdash; his kindness was apparent to everyone who crossed paths with him and he would've enjoyed this interactive more than anyone.
               </p>
 
               </div><!-- /.intro-modal-body -->
@@ -284,10 +284,10 @@
       class="reticle-overlay"
     >
       <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="60" cy="60" r="55" fill="none" stroke="rgba(100,180,255,0.25)" stroke-width="1" stroke-dasharray="5 4"/>
-        <circle cx="60" cy="60" r="20" fill="none" stroke="rgba(100,180,255,0.8)" stroke-width="1.5"/>
-        <ellipse cx="60" cy="60" rx="42" ry="12" fill="none" stroke="rgba(100,180,255,0.6)" stroke-width="1.5" transform="rotate(-25 60 60)"/>
-        <circle cx="60" cy="60" r="2" fill="rgba(100,180,255,0.9)"/>
+        <circle cx="60" cy="60" r="55" fill="none" stroke="rgba(100,180,255,0.40)" stroke-width="1" stroke-dasharray="5 4"/>
+        <circle cx="60" cy="60" r="20" fill="none" stroke="rgba(100,180,255,1.0)" stroke-width="1.75"/>
+        <ellipse cx="60" cy="60" rx="42" ry="12" fill="none" stroke="rgba(100,180,255,0.85)" stroke-width="1.5" transform="rotate(-25 60 60)"/>
+        <circle cx="60" cy="60" r="2" fill="rgba(100,180,255,1.0)"/>
       </svg>
     </div>
 
@@ -2275,7 +2275,11 @@ export default defineComponent({
       if (this.mobile && this.reticleEnabled && !is3D) {
         const cx = window.innerWidth / 2;
         const cy = window.innerHeight / 2;
-        this.updateLastClosePoint(event, { x: cx, y: cy }, 55);
+        // Sonification radius matches the inner "planet shape" circle in the
+        // reticle SVG: r=20 in a 120-unit viewBox rendered into a 99 px overlay
+        // → 99 * (20/120) = 16.5 screen px. Adjust both this number and the
+        // overlay's CSS width if you resize the reticle.
+        this.updateLastClosePoint(event, { x: cx, y: cy }, 17);
       } else if (!this.mobile) {
         // Desktop hover: bigger threshold in 3D because dots are smaller
         // there and a 4-px target is unhittable. Matches point-testing-3d feel.
@@ -2457,6 +2461,8 @@ export default defineComponent({
       if (is3D) {
         this.gotoExoplanet3D(pt);
       } else {
+        // CINEMATIC 2D SEARCH SLEW — to revert, swap the two lines below.
+        // gotoRADecZoomCinematic(this.wwtControl, pt.ra / 15, pt.dec, 8);
         this.gotoRADecZoom({ raRad: pt.ra * D2R, decRad: pt.dec * D2R, zoomDeg: 8, instant: false });
       }
       if (Number.isFinite(pt.plOrbper) && pt.plOrbper > 0) {
@@ -2946,6 +2952,11 @@ export default defineComponent({
       if (newVal !== oldVal) {
         this.unpinSearchPopup();
         this.lastClosePt = null;
+      }
+      // Sky-survey crossfade is 2D-only; switching to 3D should restore the
+      // discovery timeline UI rather than leave an empty bottom panel.
+      if (newVal === '3D' && this.currentTool === 'sky-survey') {
+        this.currentTool = 'crossfade';
       }
       // Constellation figure brightness differs between 2D (full) and 3D
       // (dimmed to CONSTELLATION_3D_OPACITY). Re-apply so the displayed alpha
@@ -3794,6 +3805,12 @@ body {
   border: 2px solid var(--ping-color, white);
   pointer-events: none;
   animation: ping-expand 0.35s ease-out forwards;
+  // Additive light blend: the ring pixels add to whatever the WebGL canvas
+  // has drawn beneath. Over empty sky the ring reads at its natural color;
+  // where it passes over a cluster of dots the overlapping pixels brighten
+  // (1 − (1 − a)(1 − b)), so dense regions visibly flare. Use `plus-lighter`
+  // instead for a more aggressive saturated glow.
+  mix-blend-mode: screen;
 }
 
 .search-overlay {
@@ -3814,12 +3831,18 @@ body {
   flex: 1;
   min-width: 0;
   background: var(--color-default);
-  color: var(--current-color);
-  border: 1px solid var(--current-color);
-  border-radius: 8px;
+  color: rgb(227, 227, 227);
+  border: solid 1px #1671e07c;
+  border-radius: 10px;
   padding: 6px 12px;
   font-size: 0.9em;
   outline: none;
+  transition: box-shadow 200ms ease-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 3px 2px #1671e07c;
+  }
 }
 
 .search-clear-btn {
@@ -3862,8 +3885,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110px;
-  height: 110px;
+  width: 99px;
+  height: 99px;
   pointer-events: none;
   z-index: 10;
 
@@ -3871,7 +3894,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: visible;
-    filter: drop-shadow(0 0 4px rgba(100, 180, 255, 0.4));
+    filter: drop-shadow(0 0 5px rgba(100, 180, 255, 0.6));
   }
 
 }

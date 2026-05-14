@@ -723,6 +723,29 @@ function _drawRings(renderContext: any, opacity: number, is3D: boolean) {
   if (_ring_aEndPx >= 0)   gl.disableVertexAttribArray(_ring_aEndPx);
 }
 
+// === ADAPTIVE MARKER SIZE ===================================================
+// Per-mode zoom-adaptive scale applied to the screen-space dot size. The
+// shader still renders in screen space — dots stay constant size for a fixed
+// camera — but the *per-frame uniform* responds to camera zoom so 2D circles
+// grow on zoom-in and 3D dots shrink on zoom-out. See MarkerTuning.html.
+//
+// To REVERT to the original log-zoom formula, flip ADAPTIVE_MARKER_SIZE to
+// false. The legacy block below is kept in place so toggling is one line.
+const ADAPTIVE_MARKER_SIZE = false;
+
+// scale = clamp(1 + slope * log2(refZoom / currentZoom), min, max)
+// log2(refZoom/zoom) > 0 means zoomed IN of refZoom (smaller deg in 2D,
+// smaller AU in 3D). Positive slopes in both modes — clamps shape behavior:
+//   2D: max > 1 lets the circle grow on zoom-in; min = 1 prevents shrink
+//       on zoom-out (the wide overview stays at base size).
+//   3D: max = 1 pins close-up size to base; min < 1 lets the dot shrink as
+//       the user zooms far away from the field.
+// Clamps tuned for current bases (2D 7/12, 3D 0.9/4). NOTE: MarkerTuning.html
+// listed the 3D slope as −0.18, but with `log2(refZoom/zoom)` the correct
+// sign is positive; the doc's reasoning paragraph had it inverted.
+const MARKER_SCALE_2D = { refZoom: 30,    slope: 0.12, min: 1.00, max: 1.25 };
+const MARKER_SCALE_3D = { refZoom: 15000, slope: 0.18, min: 0.40, max: 1.00 };
+
 /**
  * Per-frame draw, gated by window.__cloudDots so it can be A/B-tested
  * against WWT's textured point path. Saves and restores GL state so it
@@ -777,18 +800,28 @@ export function drawExoplanetCloud(renderContext: any, opacity: number) {
   // dots are noticeably smaller since DPR=2.5–3× already inflates each CSS
   // px on phones. __cloudDotSize is a global override (both modes/devices)
   // for quick A/B; per-mode overrides also apply to both devices.
-  const DEFAULT_DOT_SIZE_2D = _IS_COARSE_POINTER ? 4 : 6;
-  const DEFAULT_DOT_SIZE_3D = _IS_COARSE_POINTER ? 2 : 4;
+  const DEFAULT_DOT_SIZE_2D = _IS_COARSE_POINTER ? 4 : 12;
+  const DEFAULT_DOT_SIZE_3D = _IS_COARSE_POINTER ? 0.9 : 4;
   const sizeOverride = (w.__cloudDotSize as number | undefined);
   let sizeForMode = is3D
     ? ((w.__cloudDotSize3D as number | undefined) ?? sizeOverride ?? DEFAULT_DOT_SIZE_3D)
     : ((w.__cloudDotSize2D as number | undefined) ?? sizeOverride ?? DEFAULT_DOT_SIZE_2D);
 
-  const sizeMin = sizeForMode;
-  const sizeMax = sizeForMode * 1.5;
-  const b = (sizeMax - sizeMin) / 10;
-  const a = sizeMax - b * 20;
-  sizeForMode = Math.round(a + b * Math.log(renderContext.viewCamera.zoom));
+  if (ADAPTIVE_MARKER_SIZE) {
+    // New adaptive path — sub-pixel (no round), zoom-aware.
+    const cfg = is3D ? MARKER_SCALE_3D : MARKER_SCALE_2D;
+    const zoom = renderContext.viewCamera.zoom;
+    const octaves = Math.log2(cfg.refZoom / zoom);
+    const scale = Math.max(cfg.min, Math.min(cfg.max, 1 + cfg.slope * octaves));
+    sizeForMode = sizeForMode * scale;
+  } else {
+    // Legacy log-zoom formula — kept verbatim for one-flag revert.
+    const sizeMin = sizeForMode;
+    const sizeMax = sizeForMode * 1.5;
+    const b = (sizeMax - sizeMin) / 10;
+    const a = sizeMax - b * 20;
+    sizeForMode = Math.round(a + b * Math.log(renderContext.viewCamera.zoom));
+  }
   const dpr = window.devicePixelRatio || 1;
   gl.uniform1f(_uPixelScale, sizeForMode * dpr);
   gl.uniform1f(_uOpacity, opacity);
