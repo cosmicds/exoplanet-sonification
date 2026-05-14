@@ -2101,14 +2101,6 @@ export default defineComponent({
     // pointer. 3D-distance (gdist) deliberately does not factor into the
     // ranking — a far Kepler-field dot and a close hot-Jupiter dot are
     // equally hittable.
-    //
-    // Anti-mirror guard: transformWorldPointToPickSpace divides by depth
-    // without checking sign, so a point behind the camera can mirror-project
-    // near the cursor. We use a *relaxed* hemisphere cull (cos sep > -0.35,
-    // ~110° tolerance) plus a screen-bounds sanity check. The strict
-    // dot > 0 cull was rejecting legit far points whose camera-frame
-    // direction differs from the origin-frame approximation due to the
-    // camera being translated in solar-system mode.
     _closestInView3D(
       point: { x: number, y: number },
       threshold?: number
@@ -2139,11 +2131,17 @@ export default defineComponent({
         if (r.discPubdate.getTime() > currentMs) continue;
 
         const sp = ctl.getScreenPointForCoordinates(r.xR, r.yR, r.zR);
+
         if (!sp) continue;
         const sx = sp.x;
         const sy = sp.y;
         if (!isFinite(sx) || !isFinite(sy)) continue;
         if (sx < sxMin || sx > sxMax || sy < syMin || sy > syMax) continue;
+
+        // Should be the same for any coordinate, so just pick one
+        const [near, ray] = ctl.getRayForScreenPoint(sp.x, sp.y);
+        const t = (r.xR - near.x) / ray.x;
+        if (t < 0) continue;
 
         const dx = sx - px;
         const dy = sy - py;
