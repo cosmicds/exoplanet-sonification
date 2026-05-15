@@ -131,7 +131,7 @@
               <div class="intro-modal-body" ref="introBody" @scroll="onIntroBodyScroll">
 
               <p>
-                Explore all 6,286 known exoplanets — planets discovered beyond our solar system — visualized in
+                Explore all 6,287 known exoplanets — planets discovered beyond our solar system — visualized in
                 <a href="https://worldwidetelescope.org/home/" target="_blank" class="links">WorldWide Telescope</a>
                 across a 2D all-sky map and a 3D Milky Way galaxy.
                 Exoplanet data was retrieved from the
