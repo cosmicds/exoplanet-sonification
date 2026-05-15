@@ -32,29 +32,6 @@ jobs:
           commit_message: "chore: update exoplanet data from NASA archive"
           file_pattern: src/exoplanetData.ts
 
-      # ── Build (only runs if the data file actually changed) ──────────────
-      - uses: actions/setup-node@v4
-        if: steps.commit.outputs.changes_detected == 'true'
-        with:
-          node-version: '20'
-
-      - name: Install JS deps
-        if: steps.commit.outputs.changes_detected == 'true'
-        run: yarn install --frozen-lockfile
-
-      - name: Build
-        if: steps.commit.outputs.changes_detected == 'true'
-        run: npm run build
-
-      # ── Deploy dist/ to self-hosted server via SCP ───────────────────────
-      # Requires GitHub secrets: DEPLOY_HOST, DEPLOY_USER, DEPLOY_KEY, DEPLOY_PATH
-      - name: Deploy to server
-        if: steps.commit.outputs.changes_detected == 'true'
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USER }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          source: "dist/"
-          target: ${{ secrets.DEPLOY_PATH }}
-          strip_components: 1
+  deploy:
+    needs: [update]
+    uses: cosmicds/exoplanet-sonification/.github/workflows/build-deploy.yml@main
