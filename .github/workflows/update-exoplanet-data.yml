@@ -30,4 +30,4 @@ jobs:
         id: commit
         with:
           commit_message: "chore: update exoplanet data from NASA archive"
-          file_pattern: src/exoplanetData.ts
+          file_pattern: src/exoplanetData.ts src/exo-sonification.vue
