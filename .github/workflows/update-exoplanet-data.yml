@@ -31,7 +31,3 @@ jobs:
         with:
           commit_message: "chore: update exoplanet data from NASA archive"
           file_pattern: src/exoplanetData.ts
-
-  deploy:
-    needs: [update]
-    uses: cosmicds/exoplanet-sonification/.github/workflows/build-deploy.yml@main
