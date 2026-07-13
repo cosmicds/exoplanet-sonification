@@ -2,7 +2,28 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
+  <script>
+    // Logic derived from https://stackoverflow.com/a/61839170
+    const local = (function (hostname=window.location.hostname) {
+      return (
+        (['localhost', '127.0.0.1', '', '::1'].includes(hostname))
+        || (hostname.startsWith('192.168.'))
+        || (hostname.startsWith('10.'))
+      )
+    })();
+    if (!local) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-C2ELSYY9VC";
+      document.head.appendChild(script);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'G-C2ELSYY9VC');
+    }
+  </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
